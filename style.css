@@ -202,7 +202,7 @@ h1, h2, h3, h4 {
 	left: 0;
 }
 
-.slider-text:hover a:before {	
+.slider-text a:hover:before {	
 	background-position: -95px -157px;
 }
 .no-link-slide {
@@ -214,7 +214,7 @@ h1, h2, h3, h4 {
 /*Уведомление о куках*/
 .alert-black {
 	color: #fff;
-	opacity: .9
+	opacity: .9;
 	background-color: #404040;
 	border: none;
 	border-radius: 0;
