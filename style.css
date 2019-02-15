@@ -1,2 +1,165 @@
 /*Стили Web Style Production 24 (https://wsp24.ru) */
+* {
+	font-family: Arial,Helvetica;
+}
+
+h1, h2, h3, h4 {
+	padding: 2px 10px 1px 0;
+	font-family: "Helvetica Neue LT W02_57 Cond";	
+	letter-spacing: 0.025em;
+	font-weight: 700;
+}
+
+
+/*Навигация*/
+.navbar .nav-link.icon-int {
+	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+.navbar a {
+	font-family: 'Arial';
+	font-weight: 200;
+	font-size: 12px;
+	color: #7f7f7f !important;
+}
+.navbar li {
+	padding: 0 .05rem
+} 
+.dropdown:hover > .dropdown-menu, .nav-link:hover > .tab-pane { 
+	display: block; 
+}
+.expand-on-click {
+	background-image: url(images/icon-search-menu.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	float: right;
+	padding: 9px;
+	width: 50px;
+}
+.form-control {
+	font-size: 12px;
+	height: 25px;
+	margin-right: 1rem!important;
+}
+.navbar-1 {
+	height: 75px;
+}
+.navbar-2 li.dropdown>a {
+	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: .025em;
+	color: #0071b9 !important;
+}
+.navbar-2 li.dropdown>a:hover {
+	color: #002fcb !important;
+	background-color: #f4f4f4;
+}
+.navbar-2 .dropdown-toggle::after {
+	display: none;
+}
+.navbar-2 .dropdown {
+	position: static;
+}
+.navbar-2 .navbar-nav {
+	position: relative;
+}
+.navbar-2 .dropdown-menu {
+	right: -8.5rem;
+	left: -2rem;
+	margin: 0;
+	padding: 0;
+}
+.navbar-2 .dropdown-menu ul {
+	background: #f4f4f4;	
+	padding: 0;
+}
+.navbar-2 .dropdown-menu li {
+	list-style: none;
+	float: left;
+	width: calc(100%/3);
+	border-right: 1px solid #d7d7d7;
+	padding-left: 1.5rem;
+}
+.navbar-2 .dropdown-menu li:nth-child(3n) {
+	border: 0;
+}
+.navbar-2 .dropdown-menu a {	
+	font-family: "Helvetica Neue LT W02_57 Cond",Helvetica,Arial;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 44px;
+	letter-spacing: .04em;
+	color: #404040 !important;
+}
+.navbar-2 .dropdown-menu a:hover {
+	text-decoration: none;
+}
+.navbar-2 .dropdown-menu div {
+	clear: both;
+	background-color: #fff;
+	padding-left: 1.5rem;
+	border-top: 1px solid #d7d7d7;	
+}
+.navbar-2 .dropdown-menu div a {
+	background: url(images/nav-overview-cubes.png) no-repeat 0 50%;
+	padding-left: 1.25rem;
+}
+.navbar-2 .btn {	
+	padding: .375rem 1.05rem;
+}
+.navbar-2 .clearfix {
+	background: none;
+}
+.logo {
+	height: 60px;
+}
+.logo a {	
+	background: url(images/boge_logo_claim.png) no-repeat left top;
+	height: 100%;
+	background-size: 100%;
+	display: block;
+}
+
+
+
+/*Уведомление о куках*/
+.alert-black {
+	color: #fff;
+	background-color: #404040;
+	border: none;
+	border-radius: 0;
+	font-size: 12px;
+	margin-bottom: 0;
+	position: absolute;
+	bottom: 0;
+}
+
+.alert-black h2 {
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0 0 5px;
+}
+
+.alert-black a {
+	color: #fff;
+	text-decoration: underline;
+}
+.alert-black p {
+	margin-bottom: 0;
+}
+
+.alert-black button {	
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	color: #000;
+	font-family: Arial,sans-serif;
+	font-weight: 700;
+	padding: 4px 8px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #fff;
+	cursor: pointer;  
+}
+
 
