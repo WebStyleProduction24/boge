@@ -407,3 +407,13 @@ footer > div::before {
 		color: #007bff;
 	}
 }
+
+@media (max-width: 576px) {
+	.display-sm-none {
+		display: none !important;
+	}
+	.carousel img {
+		width: auto !important;
+		height: 150px;
+	}
+}
