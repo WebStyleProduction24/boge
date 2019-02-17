@@ -2,8 +2,14 @@
 * {
 	font-family: Helvetica,Arial;
 }
+body {
+	font-size: 14px;
+}
 a, a:hover {
 	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: .005rem
 }
 h1, h2, h4, h5, h6 {
 	font-family: "Helvetica Neue LT W02_57 Cond";	
@@ -12,8 +18,7 @@ h2 {
 	font-size: 2.4rem;
 }
 h3 {
-	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	letter-spacing: .025em;
+	font-family: "Helvetica Neue LT W02_77 Bd Cn";
 	font-size: 1.1rem
 }
 h5 {
@@ -22,7 +27,12 @@ h5 {
 h6 {
 	font-size: .975rem
 }
+.title {
 
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    letter-spacing: .01em;
+}
 /*Навигация*/
 .navbar .nav-link.icon-int {
 	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
@@ -51,7 +61,7 @@ h6 {
 }
 .navbar-2 li.dropdown>a {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-size: 1.175em;
+	font-size: 1.25em;
 	letter-spacing: .025em;
 }
 
@@ -128,7 +138,6 @@ h6 {
 .slider-text h2 {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
 	line-height: 44px;
-	letter-spacing: .025em;
 	max-width: 500px;
 }
 
@@ -160,8 +169,6 @@ h6 {
 	height: 36px;
 }
 
-
-/*первый блок*/
 
 /*Уведомление о куках*/
 .alert {
