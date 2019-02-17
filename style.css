@@ -416,4 +416,7 @@ footer > div::before {
 		width: auto !important;
 		height: 150px;
 	}
+	.slider-text h2 {
+    font-size: 1.75rem;
+}
 }
