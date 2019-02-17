@@ -28,7 +28,7 @@ h6 {
 	font-size: .975rem
 }
 .title {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	line-height: 1.95rem;
 	letter-spacing: .01em;
 }
@@ -43,6 +43,7 @@ h6 {
 	display: flex;
 	flex:1 0 auto;
 }
+
 /*Навигация*/
 .navbar .nav-link.icon-int {
 	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
