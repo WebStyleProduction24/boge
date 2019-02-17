@@ -28,10 +28,20 @@ h6 {
 	font-size: .975rem
 }
 .title {
-
-    font-size: 1.5rem;
-    line-height: 1.95rem;
-    letter-spacing: .01em;
+	font-size: 1.75rem;
+	line-height: 1.95rem;
+	letter-spacing: .01em;
+}
+.title a, .title{
+	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial !important;
+}
+.equal, .equal > div[class*='col-'] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex:1 0 auto;
 }
 /*Навигация*/
 .navbar .nav-link.icon-int {
