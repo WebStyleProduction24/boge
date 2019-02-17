@@ -57,9 +57,6 @@ footer .navbar-nav a {
 	font-size: 1rem
 }
 
-
-
-
 /*Навигация*/
 .navbar .nav-link.icon-int {
 	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
@@ -139,6 +136,17 @@ footer .navbar-nav a {
 	height: 100%;
 	background-size: 100%;
 }
+.carousel-control-next {
+	z-index: 100;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: rgba(255,255,255,.5);
+	width: 50px;
+	height: 50px;
+	background-size: 50%;
+	top: -90px;
+	position: relative;
+}
 
 /*Слайдер*/
 .carousel img {
@@ -152,10 +160,14 @@ footer .navbar-nav a {
 .carousel-indicators .active {
 	background-color: #a5e93a;
 }
+.slider-text a {
+	color: #fff;
+}
 
 /*Техт на слайдере*/
 .slider-text {
 	height: calc(100% - 50px);
+	color: #fff;
 }
 
 .slider-text h2 {
@@ -354,4 +366,25 @@ footer > div::before {
 }
 .footer-2 {
 	background: #002f6b;
+}
+
+
+
+
+@media (max-width: 768px) {
+	.carousel-inner::after {
+		width: 400px;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.slider-text {
+		position: inherit !important;
+		color: #007bff;
+		height: 100%;
+		padding-top: 30px;
+	}	
+	.slider-text a {
+		color: #007bff;
+	}
 }
