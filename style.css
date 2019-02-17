@@ -375,16 +375,20 @@ footer > div::before {
 }
 
 
-
-
 @media (max-width: 768px) {
-
-
-
-
 	.logo a {
-    background-image: url(images/boge_logo_.png);
-}
+		background-image: url(images/boge_logo_.png);
+	}
+	.border-lg-none {
+		border: none !important;
+	}
+	.title {
+		font-size: 1.25rem;
+	}
+	.image-full-md {
+		width: 100%;
+		height: auto;
+	}
 
 	/*Карусель*/
 	.carousel-inner::after {
