@@ -46,6 +46,19 @@ h6 {
 .cursor-pointer {
 	cursor: pointer;
 }
+.navbar-2 li.dropdown>a, footer .navbar-nav a {
+	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
+	letter-spacing: .025em;
+}
+.navbar-2 li.dropdown>a {
+	font-size: 1.25em;
+}
+footer .navbar-nav a {
+	font-size: 1rem
+}
+
+
+
 
 /*Навигация*/
 .navbar .nav-link.icon-int {
@@ -70,11 +83,6 @@ h6 {
 }
 .navbar-1 {
 	height: 75px;
-}
-.navbar-2 li.dropdown>a {
-	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-size: 1.25em;
-	letter-spacing: .025em;
 }
 .navbar-2 .dropdown-toggle::after {
 	display: none;
@@ -275,4 +283,71 @@ h6 {
 .active,
 .dot:hover {
 	opacity: 1;
+}
+
+/*Подвал*/
+.footer-1 {
+	background: #002e6b;
+	background: -moz-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -webkit-gradient(left top,right bottom,color-stop(0%,#002e6b),color-stop(40%,#002e6b),color-stop(60%,#0072b9),color-stop(100%,#0072b9));
+	background: -webkit-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -o-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -ms-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: linear-gradient(135deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e6b',endColorstr='#0072b9',GradientType=1);
+	margin-top: 50px;	
+}
+
+footer nav::after {
+	position: absolute;
+	content: "";
+	right: 203px;
+	top: 0;
+	height: 21px;
+	width: 100%;
+	background: #fff;
+}
+footer nav::before {
+	position: absolute;
+	content: "";
+	right: 175px;
+	top: 0;
+	border-right: 28px solid transparent;
+	border-top: 21px solid #fff;
+	width: 30px;
+	height: 17px;
+}
+.ext {
+	background: url(images/footer_ext_link.png) no-repeat left 3px;
+	background-size: 14px;
+	height: 25px;
+}
+
+.social {
+	background-size: 100% !important;
+	font-size: 0;
+	height: 25px;
+}
+.youtube {
+	background: url(images/footer_youtube.png) no-repeat left top;
+	width: 30px;
+}
+.twitter {
+	background: url(images/footer_twitter.png) no-repeat -1px top;
+	width: 24px;
+}
+.facebook {
+	background: url(images/footer_facebook.png) no-repeat left top;
+}
+.linkedin {
+	background: url(images/footer_linkedin.png) no-repeat left top;
+}
+.xing {
+	background: url(images/footer_xing.png) no-repeat left top;
+}
+.facebook, .linkedin, .xing {
+	width: 25px;
+}
+.footer-2 {
+	background: #002f6b;
 }
