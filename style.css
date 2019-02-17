@@ -58,6 +58,9 @@ footer .navbar-nav a {
 }
 
 /*Навигация*/
+.navbar-1 {
+	float: right;
+}
 .navbar .nav-link.icon-int {
 	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
 }
@@ -85,8 +88,8 @@ footer .navbar-nav a {
 	display: none;
 }
 .navbar-2 .dropdown-menu {
-	right: -8.5rem;
-	left: -2rem;
+	right: -5.5rem;
+	left: -6rem;
 	margin: 0;
 	padding: 0;
 }
@@ -146,6 +149,9 @@ footer .navbar-nav a {
 	background-size: 50%;
 	top: -90px;
 	position: relative;
+}
+.my-bodge {
+	font-size: .5rem;
 }
 
 /*Слайдер*/
@@ -372,6 +378,15 @@ footer > div::before {
 
 
 @media (max-width: 768px) {
+
+
+
+
+	.logo a {
+    background-image: url(images/boge_logo_.png);
+}
+
+	/*Карусель*/
 	.carousel-inner::after {
 		width: 400px;
 	}
