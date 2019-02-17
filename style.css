@@ -1,37 +1,72 @@
 /*Стили Web Style Production 24 (https://wsp24.ru) */
 * {
-	font-family: Arial,Helvetica;
+	font-family: Helvetica,Arial;
+}
+body {
+	font-size: 14px;
 }
 a, a:hover {
 	text-decoration: none;
 }
-
-h1, h2, h3, h4 {
-	padding: 2px 10px 1px 0;
-	letter-spacing: 0.025em;
-	font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: .005rem
 }
-h1, h2, h3 {
+h1, h2, h4, h5, h6 {
 	font-family: "Helvetica Neue LT W02_57 Cond";	
 }
-h4 {
-	font-size: 14px;
+h2 {
+	font-size: 2.4rem;
 }
-/*Навигация*/
-.navbar .nav-link.icon-int {
-	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
-	padding-left: 20px;
+h3 {
+	font-family: "Helvetica Neue LT W02_77 Bd Cn";
+	font-size: 1.1rem
+}
+h5 {
+	font-size: 1.05rem
+}
+h6 {
+	font-size: .975rem
+}
+.title {
+	font-size: 1.5rem;
+	line-height: 1.95rem;
+	letter-spacing: .01em;
+}
+.title a, .title{
+	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial !important;
+}
+.equal, .equal > div[class*='col-'] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex:1 0 auto;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.navbar-2 li.dropdown>a, footer .navbar-nav a {
+	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
+	letter-spacing: .025em;
+}
+.navbar-2 li.dropdown>a {
+	font-size: 1.25em;
+}
+footer .navbar-nav a {
+	font-size: 1rem
 }
 
-.navbar a {
-	font-family: 'Arial';
-	font-weight: 200;
-	font-size: 12px;
-	color: #7f7f7f !important;
+/*Навигация*/
+.navbar-1 {
+	float: right;
 }
-.navbar li {
-	padding: 0 .05rem
-} 
+.navbar .nav-link.icon-int {
+	background: url(images/boge-int-pfeil-markiert.png) no-repeat 0 50%;
+}
+.navbar a {
+	font-size: .75rem;
+}
 .dropdown:hover > .dropdown-menu, .nav-link:hover > .tab-pane { 
 	display: block; 
 }
@@ -39,89 +74,46 @@ h4 {
 	background-image: url(images/icon-search-menu.png);
 	background-position: right;
 	background-repeat: no-repeat;
-	float: right;
 	padding: 9px;
 	width: 50px;
 }
 .form-control {
-	font-size: 12px;
+	font-size: .95rem;
 	height: 25px;
-	margin-right: 1rem!important;
 }
 .navbar-1 {
 	height: 75px;
 }
-.navbar-2 li.dropdown>a {
-	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: .025em;
-	color: #0071b9 !important;
-}
-.navbar-2 li.dropdown>a:hover {
-	color: #002fcb !important;
-	background-color: #f4f4f4;
-}
 .navbar-2 .dropdown-toggle::after {
 	display: none;
 }
-.navbar-2 .dropdown {
-	position: static;
-}
-.navbar-2 .navbar-nav {
-	position: relative;
-}
 .navbar-2 .dropdown-menu {
-	right: -8.5rem;
-	left: -2rem;
+	right: -5.5rem;
+	left: -6rem;
 	margin: 0;
 	padding: 0;
 }
-.navbar-2 .dropdown-menu ul {
-	background: #f4f4f4;	
-	padding: 0;
-}
-.navbar-2 .dropdown-menu li {
-	list-style: none;
-	float: left;
-	width: calc(100%/3);
-	border-right: 1px solid #d7d7d7;
-	padding-left: 1.5rem;
-}
 .navbar-2 .dropdown-menu li:nth-child(3n) {
-	border: 0;
+	border-right: none !important;
 }
 .navbar-2 .dropdown-menu a {	
 	font-family: "Helvetica Neue LT W02_57 Cond",Helvetica,Arial;
-	font-weight: 400;
-	font-size: 15px;
+	font-size: .95rem;
 	line-height: 44px;
 	letter-spacing: .04em;
-	color: #404040 !important;
 }
 .navbar-2 .dropdown-menu a:hover {
 	text-decoration: none;
 }
 .navbar-2 .dropdown-menu div {
 	clear: both;
-	background-color: #fff;
-	padding-left: 1.5rem;
-	border-top: 1px solid #d7d7d7;	
 }
 .navbar-2 .dropdown-menu div a {
 	background: url(images/nav-overview-cubes.png) no-repeat 0 50%;
-	padding-left: 1.25rem;
-}
-.navbar-2 .btn {	
-	padding: .375rem 1.05rem;
-}
-.navbar-2 .clearfix {
-	background: none;
 }
 .logo {
 	height: 60px;
 }
-
 .logo::before {
 	position: absolute;
 	bottom: -20px;
@@ -129,68 +121,70 @@ h4 {
 	content: "";
 	border-left: 28px solid transparent;
 	border-top: 21px solid #fff;
-	width: 940px;
+	width: 100%;
 	z-index: 2;
+}
+.carousel-inner::after {
+	position: absolute;
+	bottom: -24px;
+	right: -1px;
+	content: "";
+	border-top: 21px solid #fff;
+	width: 700px;
+	z-index: 2;
+	top: -1px;
 }
 .logo a {	
 	background: url(images/boge_logo_claim.png) no-repeat left top;
 	height: 100%;
 	background-size: 100%;
-	display: block;
 }
-
-
-
+.carousel-control-next {
+	z-index: 100;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: rgba(255,255,255,.5);
+	width: 50px;
+	height: 50px;
+	background-size: 50%;
+	top: -90px;
+	position: relative;
+}
+.my-bodge {
+	font-size: .5rem;
+}
 
 /*Слайдер*/
 .carousel img {
 	height: 355px;
-	float: right;
-	width: auto !important;
 }
 .carousel-fade .carousel-indicators li {
-	border: 0;
-	width: 12px;
-	height: 12px;/*
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;*/
-	margin: 0 10px;
-	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-	-moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-	-o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	width: .95rem;
+	height: .95rem;
 	opacity: .75;
 }
-.carousel-fade .carousel-indicators .active {
+.carousel-indicators .active {
 	background-color: #a5e93a;
+}
+.slider-text a {
+	color: #fff;
 }
 
 /*Техт на слайдере*/
 .slider-text {
-	position: absolute;
 	height: calc(100% - 50px);
-	width: 100%;
-	margin-bottom: 50px;
+	color: #fff;
 }
 
 .slider-text h2 {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-size: 38px;
-	font-weight: 100;
 	line-height: 44px;
-	letter-spacing: .025em;
-	color: #FFF;
 	max-width: 500px;
-	margin-bottom: 25px;
 }
-
 .slider-text a {
 	position: relative;	
-	color: #fff;
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-size: 24px;
-	position: relative;
+	font-size: 1.5rem;
 	padding-left: 60px;
 }
 .slider-text a:hover {
@@ -207,7 +201,6 @@ h4 {
 	top: -10px;
 	left: 0;
 }
-
 .slider-text a:hover:before {	
 	background-position: -95px -157px;
 }
@@ -215,68 +208,215 @@ h4 {
 	height: 36px;
 }
 
-
-/*первый блок*/
-
-main .container {
-	margin-top: 40px;
-}
-
-main h2 {
-	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
-	font-size: 15px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: .025em;
-	color: #404040;
-	margin-bottom: 6px;
-	margin-top: 10px;
-}
-
-main h4 {	
-	color: #494949;
-	font-weight: 400;
-	margin-top: 15px;
-}
-
-
 /*Уведомление о куках*/
-.alert-black {
-	color: #fff;
+.alert {
 	opacity: .9;
-	background-color: #404040;
-	border: none;
-	border-radius: 0;
-	font-size: 12px;
-	margin-bottom: 0;
-	position: fixed;
-	bottom: 0;
 }
-
+.alert p {
+	font-size: .675rem
+}
 .alert-black h2 {
-	font-size: 16px;
 	line-height: 1.4;
-	margin: 0 0 5px;
 }
 
-.alert-black a {
-	color: #fff;
-	text-decoration: underline;
+/*Кнопка скроллинга в начало страницы*/
+#top-scroller {
+	display: none;
+	top: 470px;
+	right: 0;
+	font-size: 0;
+	width: 50px;
+	height: 50px;
+	background: url(images/to-top.png) no-repeat center center #fff;
+	background-size: 19px 13px;
+	z-index: 9999;
+	cursor: pointer;
 }
-.alert-black p {
-	margin-bottom: 0;
-}
-
-.alert-black button {	
-	border-radius: 6px;
-	border: 1px solid #dcdcdc;
-	color: #000;
-	font-family: Arial,sans-serif;
-	font-weight: 700;
-	padding: 4px 8px;
-	text-decoration: none;
-	text-shadow: 1px 1px 0 #fff;
-	cursor: pointer;  
+#top-scroller:hover {
+	background: url(images/to-top-hover.png) no-repeat center center #fff;
+	background-size: 19px 13px;    
 }
 
+/*Слайд-шоу*/
+* {
+	box-sizing: border-box;
+}
+.container {
+	position: relative;
+}
+.mySlides {
+	display: none;
+}
+.cursor {
+	cursor: pointer;
+}
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.column {
+	float: left;
+	width: 16.66%;
+}
+.dot {
+	opacity: 0.6;
+}
+.active,
+.dot:hover {
+	opacity: 1;
+}
 
+/*Подвал*/
+.footer-1 {
+	background: #002e6b;
+	background: -moz-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -webkit-gradient(left top,right bottom,color-stop(0%,#002e6b),color-stop(40%,#002e6b),color-stop(60%,#0072b9),color-stop(100%,#0072b9));
+	background: -webkit-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -o-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: -ms-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	background: linear-gradient(135deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e6b',endColorstr='#0072b9',GradientType=1);
+	margin-top: 50px;	
+}
+
+footer {
+	position: relative;
+}
+
+footer > div::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: -1px;
+	height: 21px;
+	width: 50%;
+	background: #fff;
+}
+footer > div::before {
+	position: absolute;
+	content: "";
+	right: 225px;
+	top: -1px;
+	border-right: 28px solid transparent;
+	border-top: 21px solid #fff;
+	width: 700px;
+	height: 17px;
+}
+.ext {
+	background: url(images/footer_ext_link.png) no-repeat left 3px;
+	background-size: 14px;
+	height: 25px;
+}
+
+.social {
+	background-size: 100% !important;
+	font-size: 0;
+	height: 25px;
+}
+.youtube {
+	background: url(images/footer_youtube.png) no-repeat left top;
+	width: 30px;
+}
+.twitter {
+	background: url(images/footer_twitter.png) no-repeat -1px top;
+	width: 24px;
+}
+.facebook {
+	background: url(images/footer_facebook.png) no-repeat left top;
+}
+.linkedin {
+	background: url(images/footer_linkedin.png) no-repeat left top;
+}
+.xing {
+	background: url(images/footer_xing.png) no-repeat left top;
+}
+.facebook, .linkedin, .xing {
+	width: 25px;
+}
+.footer-2 {
+	background: #002f6b;
+}
+
+
+@media (max-width: 768px) {
+	.logo a {
+		background-image: url(images/boge_logo_.png);
+	}
+	.border-lg-none {
+		border: none !important;
+	}
+	.title {
+		font-size: 1.25rem;
+	}
+	.image-full-md {
+		width: 100%;
+		height: auto;
+	}
+
+	/*Карусель*/
+	.carousel-inner::after {
+		width: 400px;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.slider-text {
+		position: inherit !important;
+		color: #007bff;
+		height: 100%;
+		padding-top: 30px;
+	}	
+	.slider-text a {
+		color: #007bff;
+	}
+}
+
+@media (max-width: 576px) {
+	.display-sm-none {
+		display: none !important;
+	}
+	.carousel img {
+		width: auto !important;
+		height: 150px;
+	}
+	.slider-text h2 {
+    font-size: 1.75rem;
+}
+}
