@@ -441,8 +441,6 @@
 		<!-- Конец пятого блока -->
 	</main>
 
-	<div style="height:300px;"></div>
-
 	<!-- Конец тела страницы-->
 
 	<!-- Подвал -->
@@ -457,7 +455,7 @@
 	<!-- Конец подвала -->
 
 	<!-- Сообщение о куках  -->
-	<div class="rounded-0 fixed-bottom mb-0 pb-0 alert alert-dismissible fade show container-fluid text-white bg-dark" role="alert" >
+	<div class="rounded-0 fixed-bottom mb-0 pb-2 alert alert-dismissible fade show container-fluid text-white bg-dark" role="alert" >
 		<div class="container">
 			<div class="row  align-items-center justify-content-between">
 				<div class="col-10">
@@ -470,16 +468,22 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Конец сообщения о куках -->
+
+	<!-- Прокрутка в начало страницы -->
+	<div class="position-fixed border cursor-pointer" id="top-scroller" onclick="javascript: window.scrollTo(0,0);">To Top</div>
+	<!-- Конец прокрутки в начало страницы -->
+
+	<div id="top">test</div>
 
 
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/up-scroll.js"></script>
 
 </body>
 </html>

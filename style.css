@@ -116,8 +116,18 @@ h6 {
 	content: "";
 	border-left: 28px solid transparent;
 	border-top: 21px solid #fff;
-	width: 940px;
+	width: 100%;
 	z-index: 2;
+}
+.carousel-inner::after {
+	position: absolute;
+	bottom: -24px;
+	right: 0px;
+	content: "";
+	border-top: 21px solid #fff;
+	width: 750px;
+	z-index: 2;
+	top: -1px;
 }
 .logo a {	
 	background: url(images/boge_logo_claim.png) no-repeat left top;
@@ -194,4 +204,20 @@ h6 {
 	line-height: 1.4;
 }
 
-
+/*Кнопка скроллинга в начало страницы*/
+#top-scroller {
+	display: none;
+	top: 470px;
+	right: 0;
+	font-size: 0;
+	width: 50px;
+	height: 50px;
+	background: url(images/to-top.png) no-repeat center center #fff;
+	background-size: 19px 13px;
+	z-index: 9999;
+	cursor: pointer;
+}
+#top-scroller:hover {
+	background: url(images/to-top-hover.png) no-repeat center center #fff;
+	background-size: 19px 13px;    
+}
