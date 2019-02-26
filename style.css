@@ -27,6 +27,9 @@ h5 {
 h6 {
 	font-size: .975rem
 }
+main {
+	min-height: calc(100vh - 131px - 237px);
+}
 .title {
 	font-size: 1.5rem;
 	line-height: 1.95rem;
@@ -56,6 +59,16 @@ h6 {
 footer .navbar-nav a {
 	font-size: 1rem
 }
+
+/*Крошки*/
+.breadcrumb {
+	position: relative;
+}
+.breadcrumb span {
+	display: flex;
+	padding: 50px 15px;
+}
+/*Конец крошек*/
 
 /*Навигация*/
 .navbar-1 {
@@ -124,7 +137,7 @@ footer .navbar-nav a {
 	width: 100%;
 	z-index: 2;
 }
-.carousel-inner::after {
+.carousel-inner::after, .breadcrumb::after {
 	position: absolute;
 	bottom: -24px;
 	right: -1px;
@@ -304,7 +317,7 @@ footer .navbar-nav a {
 }
 
 /*Подвал*/
-.footer-1 {
+.footer-1, .breadcrumb {
 	background: #002e6b;
 	background: -moz-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	background: -webkit-gradient(left top,right bottom,color-stop(0%,#002e6b),color-stop(40%,#002e6b),color-stop(60%,#0072b9),color-stop(100%,#0072b9));
@@ -313,9 +326,10 @@ footer .navbar-nav a {
 	background: -ms-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	background: linear-gradient(135deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e6b',endColorstr='#0072b9',GradientType=1);
-	margin-top: 50px;	
 }
-
+.footer-1 {
+	margin-top: 50px;
+}
 footer {
 	position: relative;
 }
@@ -375,6 +389,7 @@ footer > div::before {
 }
 
 
+
 @media (max-width: 768px) {
 	.logo a {
 		background-image: url(images/boge_logo_.png);
@@ -417,6 +432,6 @@ footer > div::before {
 		height: 150px;
 	}
 	.slider-text h2 {
-    font-size: 1.75rem;
-}
+		font-size: 1.75rem;
+	}
 }
