@@ -417,6 +417,22 @@ a.prnt {
 	background-size: 17px;
 }
 
+/*Списки*/
+.list-custom {
+	font-size: .8rem;
+	list-style-type: none;
+}
+.list-custom li::after {
+	content: '';
+	background-image: url(images/tick.png);
+	width: 18px;
+	height: 16px;
+	position: absolute;
+	background-size: cover;
+	left: 0px;
+}
+
+
 @media (max-width: 1100px) {
 	.breadcrumb span {
 		padding: 50px 0px;
