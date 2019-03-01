@@ -64,7 +64,7 @@ footer .navbar-nav a {
 .breadcrumb {
 	position: relative;
 }
-.breadcrumb span {
+.breadcrumb span span {
 	display: flex;
 	padding: 50px 15px;
 }
@@ -430,6 +430,17 @@ a.prnt {
 	position: absolute;
 	background-size: cover;
 	left: 0px;
+}
+
+/*Фон header для страницы Products*/
+.bg-products-page {	
+	background: url(images/boge-header-produkte.jpg) 100% 0 no-repeat;    
+	width: 100%;
+	height: 238px;
+}
+
+.topbanner-detail {
+	background: linear-gradient(180deg,#00306d,#054990) repeat scroll 0 0 transparent;
 }
 
 
