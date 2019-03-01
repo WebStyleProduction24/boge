@@ -189,7 +189,7 @@ footer .navbar-nav a {
 	color: #fff;
 }
 
-.slider-text h2 {
+.bg-products-page h2, .slider-text h2 {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
 	line-height: 44px;
 	max-width: 500px;
@@ -316,7 +316,16 @@ footer .navbar-nav a {
 	opacity: 1;
 }
 
-/*Подвал*/
+/*Градиентный фон*/
+.bg-gradient {
+	background: #1e5799;
+	background: -moz-linear-gradient(-45deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
+	background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#1e5799),color-stop(100%,#2989d8),color-stop(100%,#207cca),color-stop(100%,#7db9e8),color-stop(101%,#2989d8));
+	background: -webkit-linear-gradient(-45deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
+	background: -o-linear-gradient(-45deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
+	background: -ms-linear-gradient(-45deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
+	background: linear-gradient(135deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
+}
 .footer-1, .breadcrumb {
 	background: #002e6b;
 	background: -moz-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
@@ -327,6 +336,8 @@ footer .navbar-nav a {
 	background: linear-gradient(135deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e6b',endColorstr='#0072b9',GradientType=1);
 }
+
+/*Подвал*/
 .footer-1 {
 	margin-top: 50px;
 }
