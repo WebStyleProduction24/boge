@@ -192,7 +192,7 @@ footer .navbar-nav a {
 	color: #fff;
 }
 
-.bg-products-page h2, .slider-text h2 {
+.bg-compressors-page h2, .bg-products-page h2, .slider-text h2 {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
 	line-height: 44px;
 	max-width: 500px;
@@ -446,16 +446,28 @@ a.prnt {
 	left: 0px;
 }
 
-/*Фон header для страницы Products*/
-.bg-products-page {	
-	background: url(images/boge-header-produkte.jpg) 100% 0 no-repeat;    
+/*Фон header для страниц Products и Screw Compressors*/
+.bg-products-page, .bg-compressors-page {	
 	width: 100%;
 	height: 238px;
 }
+.bg-products-page {	
+	background: url(images/boge-header-produkte.jpg) 100% 0 no-repeat;
+}
 
+.bg-compressors-page {	
+	background: url(images/boge-schraubenkompressor.jpg) 100% 0 no-repeat;
+}
 .topbanner-detail {
 	background: linear-gradient(180deg,#00306d,#054990) repeat scroll 0 0 transparent;
 }
+
+
+/*z-index*/
+.z-index-tooltip {
+	z-index: 10000;
+}
+
 
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
