@@ -462,12 +462,30 @@ a.prnt {
 	background: linear-gradient(180deg,#00306d,#054990) repeat scroll 0 0 transparent;
 }
 
-
 /*z-index*/
 .z-index-tooltip {
 	z-index: 10000;
 }
 
+/*Карусель на странице Compressors*/
+.carousel-compressors-page {
+	background: linear-gradient(0deg,#002f6b 0%,#0071b9 100%) repeat scroll 0 0 transparent;
+}
+.carousel-compressors-page img{
+	width: 100%;
+	height: auto;
+}
+.carousel-compressors-page .carousel-inner::after {
+	display: none;
+}
+.carousel-compressors-page.carousel-fade .carousel-indicators li {
+	width: .75rem;
+	height: .75rem;
+	opacity: 1;
+}
+.carousel-compressors-page .carousel-indicators {
+	top: 280px;
+}
 
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
