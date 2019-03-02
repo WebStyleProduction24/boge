@@ -8,8 +8,11 @@ body {
 a, a:hover {
 	text-decoration: none;
 }
+a h6:hover {
+	color: #28a745 !important;
+}
 h1, h2, h3, h4, h5, h6 {
-	letter-spacing: .005rem
+	letter-spacing: .005px
 }
 h1, h2, h4, h5, h6 {
 	font-family: "Helvetica Neue LT W02_57 Cond";	
