@@ -67,7 +67,7 @@ footer .navbar-nav a {
 .breadcrumb {
 	position: relative;
 }
-.breadcrumb span span,{
+.breadcrumb span.container{
 	display: flex;
 	padding: 50px 15px;
 }
