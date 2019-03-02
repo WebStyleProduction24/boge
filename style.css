@@ -33,6 +33,9 @@ h6 {
 main {
 	min-height: calc(100vh - 131px - 237px);
 }
+.fs-08-rem {
+	font-size: .8rem;
+}
 .title {
 	font-size: 1.5rem;
 	line-height: 1.95rem;
@@ -61,6 +64,13 @@ main {
 }
 footer .navbar-nav a {
 	font-size: 1rem
+}
+.pfeil-button {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url(images/pfeil-button.png) 0% no-repeat;
+    background-size: 36px;
 }
 
 /*Крошки*/
@@ -431,9 +441,8 @@ a.prnt {
 	background-size: 17px;
 }
 
-/*Списки*/
+/*Списки*/	
 .list-custom {
-	font-size: .8rem;
 	list-style-type: none;
 }
 .list-custom li::after {
@@ -464,7 +473,7 @@ a.prnt {
 
 /*z-index*/
 .z-index-tooltip {
-	z-index: 10000;
+	z-index: 1000;
 }
 
 /*Карусель на странице Compressors*/
