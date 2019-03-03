@@ -72,6 +72,10 @@ footer .navbar-nav a {
     background: url(images/pfeil-button.png) 0% no-repeat;
     background-size: 36px;
 }
+.t-revers-1-rem {
+	position: relative;
+	top: -1rem;
+}
 
 /*Крошки*/
 .breadcrumb {
