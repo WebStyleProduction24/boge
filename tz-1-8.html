@@ -15,6 +15,8 @@
 
 	<link href="style.css" rel="stylesheet" type="text/css" />
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -233,18 +235,123 @@
 						<option value="138">Controls</option>
 					</select>
 				</div>
-				<div class="col p-3 border-right border-white"><span>48</span> Results</div>
+				<div class="col p-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
 				<div class="col p-3">
 					<form class="form-inline my-2 my-lg-0">									
 							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 					</form>
 				</div>
 			</div>
-			<div class="row m-0 bg-light text-success">
-				<div class="col-3">test</div>
-				<div class="col-3">test</div>
-				<div class="col-3">test</div>
-				<div class="col-3">test</div>
+			<div class="row m-0 pt-3 bg-light text-success">
+				<div class="col-3">
+					<p>
+						<button class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+							<i class="fas fa-caret-down mr-2" id="fas1"></i>
+							Type
+						</button>
+					</p>
+				</div>
+
+				<div class="col-3">
+					<p>
+						<button class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+							<i class="fas fa-caret-down mr-2" id="fas2"></i>
+							Type
+						</button>
+					</p>
+				</div>
+
+				<div class="col-3">
+					<p>
+						<button class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+							<i class="fas fa-caret-down mr-2" id="fas3"></i>
+							Type
+						</button>
+					</p>
+				</div>
+
+				<div class="col-3">
+					<p>
+						<button class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+							<i class="fas fa-caret-down mr-2" id="fas4"></i>
+							Type
+						</button>
+					</p>
+				</div>
+				<div class="collapse" id="collapseExample1">
+					<div class="card card-body">
+						test 1
+					</div>
+				</div>
+				<div class="collapse" id="collapseExample2">
+					<div class="card card-body">
+						test 2
+					</div>
+				</div>
+				<div class="collapse" id="collapseExample3">
+					<div class="card card-body">
+						test 3
+					</div>
+				</div>
+				<div class="collapse" id="collapseExample4">
+					<div class="card card-body">
+						test 4
+					</div>
+				</div>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Разворачиваемая панель #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Разворачиваемая панель #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Разворачиваемая панель #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 			</div>
 		</section>
 		<!-- Конец кнопки Print Page -->
@@ -365,6 +472,20 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/up-scroll.js"></script>
 	<script type="text/javascript" src="js/images-show.js"></script>
+
+	<script>
+
+		$('#collapseExample1').on('hide.bs.collapse', function () {
+			$('fas1').removeClass('fa-caret-down');
+			$('fas1').addClass('fa-caret-up');
+		})
+
+		$('#collapseExample1').on('show.bs.collapse', function () {
+			$('fas1').addClass('fa-caret-down');
+			$('fas1').removeClass('fa-caret-up');
+		})
+
+	</script>
 
 </body>
 </html>

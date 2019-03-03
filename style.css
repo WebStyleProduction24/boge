@@ -41,7 +41,7 @@ main {
 	line-height: 1.95rem;
 	letter-spacing: .01em;
 }
-.title a, .title{
+.title a, .title, .ff-helvetica{
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial !important;
 }
 .equal, .equal > div[class*='col-'] {
@@ -75,6 +75,9 @@ footer .navbar-nav a {
 .t-revers-1-rem {
 	position: relative;
 	top: -1rem;
+}
+.ff-helvetica {
+	letter-spacing: .2rem;
 }
 
 /*Крошки*/
