@@ -503,6 +503,17 @@ a.prnt {
 	top: 280px;
 }
 
+/*Раскрытие кнопок, раскрывающих блоки на странице Search Products*/
+.btn-show {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	height: calc(100% + 1px);
+	bottom: -1px;
+}
+.btn-show[id^='btn-']:focus {
+	box-shadow: none;
+}
+
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
