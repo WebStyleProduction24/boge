@@ -518,6 +518,19 @@ a.prnt {
 	border-color: #28a745;
 }
 
+/*Переключаемые вкладки*/
+.nav-pills .nav-link.active {
+	background-color: #f8f9fa !important;
+}
+
+.text-hover {
+	display: none;
+}
+
+.boge-hover:hover + .text-hover, .text-hover:hover {
+	display: block;
+}
+
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
