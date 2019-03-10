@@ -513,6 +513,10 @@ a.prnt {
 .btn-show[id^='btn-']:focus {
 	box-shadow: none;
 }
+.custom-control-input:checked~.custom-control-label::before {
+	background-color: #28a745;
+	border-color: #28a745;
+}
 
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
