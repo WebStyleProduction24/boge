@@ -532,6 +532,20 @@ a.prnt {
 	display: block;
 }
 
+/*Социальные иконки*/
+.fa-twitter-square {
+	color: #00acee;
+}
+.fa-facebook-square {
+	color: #3b5998;
+}
+.fa-envelope-square {
+	color: #6c757d;
+}
+.fa-twitter-square:hover, .fa-facebook-square:hover, .fa-envelope-square:hover {
+	opacity: .85;
+}
+
 @media (min-width: 1200px) {
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
