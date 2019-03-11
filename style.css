@@ -525,8 +525,9 @@ a.prnt {
 
 .text-hover {
 	display: none;
+	width: 200%;
+	font-size: .75rem;
 }
-
 .boge-hover:hover + .text-hover, .text-hover:hover {
 	display: block;
 }
