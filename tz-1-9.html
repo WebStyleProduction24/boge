@@ -245,8 +245,8 @@
 					<a class="px-4 py-3 border rounded-0 text-success nav-link" id="test5-tab" data-toggle="tab" href="#test5" role="tab" aria-controls="test5" aria-selected="false">Test5</a>
 				</li>
 			</ul>
-			<div class="bg-light tab-content border-top" id="myTabContent">
-				<div class="container tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="test-tab">
+			<div class="bg-light tab-content border-top pb-3" id="myTabContent">
+				<div class="container px-0 tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
 					<div class="row">
 						<div class="col border-right border-white">
 							<img class="w-100" src="images/public/search-results/boge-schraubenkompressor-s-40-3.png" alt="BOGE S 31-3...60-3">
@@ -298,17 +298,343 @@
 						</div>
 					</div>
 				</div>
+				<div class="container px-0 tab-pane fade" id="technical-detail" role="tabpanel" aria-labelledby="technical-detail-tab">					
+					<ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="btn btn-outline-success rounded-0 py-1 px-2 mr-4 active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">50 Hz</a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-outline-success rounded-0 py-1 px-2 " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">60 Hz</a>
+						</li>
+					</ul>
+					<div class=" mt-4 tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">BOGE</th>
+										<th scope="col" colspan="2">Max. Pressure</th>
+										<th scope="col" colspan="2">Effective Delivery Volume<br>50 Hz</th>
+										<th scope="col" colspan="2">Motor Power</th>
+										<th scope="col">Dimensions <br>W × D × H</th>
+										<th scope="col">Weight</th>
+									</tr>
+									<tr>
+										<th scope="col"><span>Type</span></th>
+										<th scope="col"><span>bar</span></th>
+										<th scope="col"><span>psig</span></th>
+										<th scope="col"><span>m<sup>3</sup>/min</span></th>
+										<th scope="col"><span>cfm</span></th>
+										<th scope="col"><span>kW</span><span>hp</span></th>
+										<th scope="col"><span>mm</span></th>
+										<th scope="col"><span>kg</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>S 31-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>3.880</td>
+										<td>137.0</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 31-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>3.350</td>
+										<td>118.3</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 31-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>2.730</td>
+										<td>96.4</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>5.310</td>
+										<td>187.5</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>4.770</td>
+										<td>168.5</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>3.860</td>
+										<td>136.3</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>6.320</td>
+										<td>223.2</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>5.610</td>
+										<td>198.1</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>4.720</td>
+										<td>166.7</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>7.300</td>
+										<td>257.8</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>6.530</td>
+										<td>230.6</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>5.330</td>
+										<td>188.2</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">BOGE</th>
+										<th scope="col" colspan="2">Pressure</th>
+										<th scope="col" colspan="2">Effective Delivery Volume<br>60 Hz</th>
+										<th scope="col" colspan="2">Motor Power</th>
+										<th scope="col">Dimensions <br>W × H × D</th>
+										<th scope="col">Weight</th>
+									</tr>
+									<tr>
+										<th>Type</th>
+										<th>bar</th>
+										<th>psig</th>
+										<th>m<sup>3</sup>/min</th>
+										<th>cfm</th>
+										<th>kW</th>
+										<th>hp</th>
+										<th>mm</th>
+										<th>kg</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>S 31-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>3.880</td>
+										<td>137.0</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 31-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>3.350</td>
+										<td>118.3</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 31-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>2.730</td>
+										<td>96.4</td>
+										<td>22.0</td>
+										<td>30.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>5.310</td>
+										<td>187.5</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>4.770</td>
+										<td>168.5</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 40-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>3.860</td>
+										<td>136.3</td>
+										<td>30.0</td>
+										<td>40.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>842</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>6.320</td>
+										<td>223.2</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>5.610</td>
+										<td>198.1</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 50-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>4.720</td>
+										<td>166.7</td>
+										<td>37.0</td>
+										<td>50.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>843</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>8</td>
+										<td>115</td>
+										<td>7.300</td>
+										<td>257.8</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>10</td>
+										<td>150</td>
+										<td>6.530</td>
+										<td>230.6</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+									<tr>
+										<td>S 60-3</td>
+										<td>13</td>
+										<td>190</td>
+										<td>5.330</td>
+										<td>188.2</td>
+										<td>45.0</td>
+										<td>60.0</td>
+										<td>1615 x 990 x 1450</td>
+										<td>994</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
 
 
 
 
-
-
-				<div class="container tab-pane fade" id="technical-detail" role="tabpanel" aria-labelledby="technical-detail-tab">Technical Detail</div>
-				<div class="container tab-pane fade" id="test3" role="tabpanel" aria-labelledby="test3-tab">Test3</div>
-				<div class="container tab-pane fade" id="test4" role="tabpanel" aria-labelledby="test4-tab">Test4</div>
-				<div class="container tab-pane fade" id="test5" role="tabpanel" aria-labelledby="test5-tab">Test5</div>
+				</div>
+				<div class="container px-0 tab-pane fade" id="test3" role="tabpanel" aria-labelledby="test3-tab">Test3</div>
+				<div class="container px-0 tab-pane fade" id="test4" role="tabpanel" aria-labelledby="test4-tab">Test4</div>
+				<div class="container px-0 tab-pane fade" id="test5" role="tabpanel" aria-labelledby="test5-tab">Test5</div>
 			</div>
 		</section>
 
@@ -327,6 +653,11 @@
 			<a href="javascript:window.print()" class="prnt text-success">Print page</a>
 		</section>
 		<!-- Конец кнопки Print Page -->
+
+
+
+
+
 
 
 
