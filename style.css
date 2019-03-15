@@ -562,6 +562,9 @@ a.prnt {
 	.alert-dismissible {
 		padding-right: 0;
 	}
+	.logo {
+		height: 40px;
+	}
 	.logo a {
 		background-image: url(images/boge_logo_.png);
 	}
