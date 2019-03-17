@@ -546,7 +546,22 @@ a.prnt {
 	opacity: .85;
 }
 
+/*Лейбл с контактными данными*/
+.contacts {
+	display: none;
+}
+
 @media (min-width: 1200px) {
+	.contacts {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		opacity: .9;
+	}
+	.contacts, .contacts .title {
+		font-size: 1.25rem;
+	}
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
 	}
