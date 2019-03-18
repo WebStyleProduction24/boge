@@ -66,11 +66,11 @@ footer .navbar-nav a {
 	font-size: 1rem
 }
 .pfeil-button {
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: url(images/pfeil-button.png) 0% no-repeat;
-    background-size: 36px;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: url(images/pfeil-button.png) 0% no-repeat;
+	background-size: 36px;
 }
 .t-revers-1-rem {
 	position: relative;
@@ -145,12 +145,12 @@ footer .navbar-nav a {
 	background: url(images/nav-overview-cubes.png) no-repeat 0 50%;
 }
 .logo {
-	height: 60px;
+	height: 65px;
 }
 .logo::before {
 	position: absolute;
 	bottom: -20px;
-	left: 220px;
+	left: 100%;
 	content: "";
 	border-left: 28px solid transparent;
 	border-top: 21px solid #fff;
@@ -160,17 +160,17 @@ footer .navbar-nav a {
 .carousel-inner::after, .breadcrumb::after {
 	position: absolute;
 	bottom: -24px;
-	right: -1px;
+	right: 0;
 	content: "";
 	border-top: 21px solid #fff;
-	width: 700px;
+	width: 55%;
 	z-index: 2;
 	top: -1px;
 }
 .logo a {	
 	background: url(images/boge_logo_claim.png) no-repeat left top;
 	height: 100%;
-	background-size: 100%;
+	background-size: 70%;
 }
 .carousel-control-next {
 	z-index: 100;
@@ -603,7 +603,7 @@ a.prnt {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {	
 	#navbarSupportedContent-2 {
 		position: absolute;
 		top: 65px;
@@ -640,7 +640,7 @@ a.prnt {
 		padding-right: 0;
 	}
 	.logo {
-		height: 40px;
+		height: 50px;
 	}
 	.logo a {
 		background-image: url(images/boge_logo_.png);
@@ -657,9 +657,6 @@ a.prnt {
 	}
 
 	/*Карусель*/
-	.carousel-inner::after, .breadcrumb::after {
-		width: 400px;
-	}
 	.carousel-indicators {
 		display: none;
 	}
@@ -671,13 +668,39 @@ a.prnt {
 	}	
 	.slider-text a {
 		color: #007bff;
+	}	
+	.navbar-expand-md {
+		-ms-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	.navbar-expand-md .navbar-collapse {
+		display: -ms-flexbox!important;
+		display: flex!important;
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+	}	
+	.navbar-expand-md .navbar-nav .dropdown-menu {
+		position: absolute;
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
 	.display-sm-none {
 		display: none !important;
 	}
+	.logo::before {
+		bottom: -36px;
+		left: 85%;
+	}
+	.logo {
+		height: 45px;
+	}
+}
+
+
+@media (max-width: 575px) {	
 	.carousel img {
 		width: auto !important;
 		height: 150px;
@@ -685,7 +708,4 @@ a.prnt {
 	.slider-text h2 {
 		font-size: 1.75rem;
 	}
-	/*.navbar-1 .collapse {
-		display: block;
-	}*/
 }
