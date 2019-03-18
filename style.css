@@ -377,7 +377,7 @@ footer > div::after {
 footer > div::before {
 	position: absolute;
 	content: "";
-	right: 225px;
+	right: 35%;
 	top: -1px;
 	border-right: 28px solid transparent;
 	border-top: 21px solid #fff;
@@ -571,6 +571,11 @@ a.prnt {
 	display: none;
 }
 
+/*Навигация в подвале*/
+footer li {
+	background: none !important;
+}
+
 @media (min-width: 1200px) {
 	.contacts {
 		display: block;
@@ -604,6 +609,11 @@ a.prnt {
 }
 
 @media (max-width: 991px) {	
+	.ext {
+		width: 100%;
+		float: left !important;
+		text-align: left;
+	}
 	#navbarSupportedContent-2 {
 		position: absolute;
 		top: 65px;
@@ -683,6 +693,14 @@ a.prnt {
 	}	
 	.navbar-expand-md .navbar-nav .dropdown-menu {
 		position: absolute;
+	}
+
+	/*Навигация в подвале*/
+	footer .collapse {
+		display: block !important;
+	}
+	footer li {
+		border-bottom: 1px solid rgba(255,255,255,.25) !important;
 	}
 }
 
