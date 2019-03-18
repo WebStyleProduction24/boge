@@ -66,11 +66,11 @@ footer .navbar-nav a {
 	font-size: 1rem
 }
 .pfeil-button {
-	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: url(images/pfeil-button.png) 0% no-repeat;
-	background-size: 36px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url(images/pfeil-button.png) 0% no-repeat;
+    background-size: 36px;
 }
 .t-revers-1-rem {
 	position: relative;
@@ -150,7 +150,7 @@ footer .navbar-nav a {
 .logo::before {
 	position: absolute;
 	bottom: -20px;
-	left: 100%;
+	left: 220px;
 	content: "";
 	border-left: 28px solid transparent;
 	border-top: 21px solid #fff;
@@ -163,7 +163,7 @@ footer .navbar-nav a {
 	right: -1px;
 	content: "";
 	border-top: 21px solid #fff;
-	width: 55%;
+	width: 700px;
 	z-index: 2;
 	top: -1px;
 }
@@ -573,7 +573,6 @@ a.prnt {
 	}
 }
 
-<<<<<<< HEAD
 @media (min-width: 769px) {
 
 	#navbarSupportedContent-2 {
@@ -584,7 +583,7 @@ a.prnt {
 	}
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 768px) {
 	#navbarSupportedContent-2 {
 		position: absolute;
 		top: 65px;
@@ -617,9 +616,6 @@ a.prnt {
 	.navbar-1{
 		height: inherit;
 	}
-=======
-@media (max-width: 768px) {
->>>>>>> parent of 5fe0489... Update 2019/03/18 3:23 +3GMT
 	.alert-dismissible {
 		padding-right: 0;
 	}
@@ -641,6 +637,9 @@ a.prnt {
 	}
 
 	/*Карусель*/
+	.carousel-inner::after, .breadcrumb::after {
+		width: 400px;
+	}
 	.carousel-indicators {
 		display: none;
 	}
@@ -652,36 +651,13 @@ a.prnt {
 	}	
 	.slider-text a {
 		color: #007bff;
-	}	
-	.navbar-expand-md {
-		-ms-flex-flow: row nowrap;
-		flex-flow: row nowrap;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
-	}
-	.navbar-expand-md .navbar-collapse {
-		display: -ms-flexbox!important;
-		display: flex!important;
-		-ms-flex-preferred-size: auto;
-		flex-basis: auto;
-	}	
-	.navbar-expand-md .navbar-nav .dropdown-menu {
-		position: absolute;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 	.display-sm-none {
 		display: none !important;
 	}
-	.logo::before {
-		bottom: -36px;
-		left: 85%;
-	}
-}
-
-
-@media (max-width: 575px) {	
 	.carousel img {
 		width: auto !important;
 		height: 150px;
