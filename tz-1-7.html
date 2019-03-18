@@ -21,13 +21,13 @@
 <body>
 
 	<!-- Навигация -->
-	<header>			
-		<div class="container">
+	<header>					
+		<div class="container mt-3 mt-lg-0 position-inherit-mw-768">
 			<div class="row justify-content-between align-items-end">
 				<div class="col-3 logo">
 					<a href="/en" title="Home" rel="home" class="d-block"></a>
 				</div>
-				<div class="col-8 col-xl-7">
+				<div class="col-lg-8 col-9 col-xl-7 position-inherit-mw-768">
 					<div class="row float-right">
 						<div class="navbar-1 col-xl-12 col-lg-12 col-4">
 							<nav class="navbar navbar-expand-md navbar-light float-right mr-xl-5">
@@ -91,108 +91,115 @@
 								</form>
 							</div>
 						</div>
-						<div class="col-4 d-lg-none d-xl-none py-3">
+						<div class="col-4 d-lg-none d-xl-none">
 							<a href="http://support.boge.com/www/bogeport.nsf/index.xsp?lang=en&amp;country=en" target="_blank" class="current">
 								<img alt="myBOGE" src="images/icn_my_boge.png" style="margin-top:1px; height:27px; width:30px">
 							</a>
-							<p class="my-bodge"><strong><a href="http://support.boge.com/www/bogeport.nsf/index.xsp?lang=en&amp;country=en">My Boge</a></strong></p>
+							<p class="my-bodge mb-0"><strong><a href="http://support.boge.com/www/bogeport.nsf/index.xsp?lang=en&amp;country=en">My Boge</a></strong></p>
 						</div>
-						<div class="navbar-2 col-xl-12 col-lg-12 col-4">
-							<nav class="navbar navbar-expand-lg navbar-light float-right">
-								<button class="navbar-toggler border-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
+						<div class="navbar-2 col-xl-12 col-lg-12 col-4 position-inherit-mw-768">
+							<nav class="navbar navbar-expand-lg navbar-light float-right p-0 position-inherit-mw-768">
+								<button class="navbar-toggler border-primary collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<i class="fas fa-times"></i>
+									<i class="fas fa-bars"></i>
 								</button>
 								<div class="collapse navbar-collapse" id="navbarSupportedContent-2">
-									<ul class="navbar-nav mr-auto align-items-center position-relative text-dark">
-										<li class="nav-item dropdown position-static px-2">
+									<div class="d-block d-lg-none mt-3" id="collapseExample">									
+										<div class="input-append position-relative px-3">
+											<input type="text" class="form-control w-100 rounded border border-secondary">
+											<button type="submit" class="btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
+										</div>
+									</div>
+									<ul class="list-group list-group-flush navbar-nav mr-auto align-items-center position-relative text-dark">
+										<li class="nav-item dropdown position-static list-group-item px-2 border-top-0">
 											<a class="btn dropdown-toggle text-primary" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												Products
 											</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="dropdownMenu1">
 												<ul class="list-unstyled p-0">
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/products">Search Products</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/screw-compressors">Screw Compressors</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/controls">Controls</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/piston-compressors">Piston Compressors</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/plant-engineering">Plant Engineering</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/innovations-en">Innovations</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/scroll-compressors">Scroll Compressors</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/compressed-air-treatment">Compressed Air Treatment</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/second-hand-machines">Second Hand Machines</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/turbocompressors">Turbo Compressors</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/heat-recovery">Heat Recovery</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/products">Search Products</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/screw-compressors">Screw Compressors</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/controls">Controls</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/piston-compressors">Piston Compressors</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/plant-engineering">Plant Engineering</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/innovations-en">Innovations</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/scroll-compressors">Scroll Compressors</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/compressed-air-treatment">Compressed Air Treatment</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/second-hand-machines">Second Hand Machines</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/turbocompressors">Turbo Compressors</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/heat-recovery">Heat Recovery</a></li>
 													<div class="border-top pl-3 bg-white"><a class="text-dark pl-4" href="/en/products-overview" class="underlink">Overview</a></div>
 												</ul>
 											</div>
 										</li>
-										<li class="nav-item dropdown position-static px-2">
+										<li class="nav-item dropdown position-static list-group-item border-white px-2">
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/efficiency">Efficiency</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/technology">Technology</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/whitepaper">Whitepaper</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/case-studies">Case Studies</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/industries">Industries</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/medical-compressed-air-systems">Medical Systems</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/special-gases">Special Gases</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/oilfree">Oil-free compressed air</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/analytics">BOGE analytics</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/efficiency">Efficiency</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/technology">Technology</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/whitepaper">Whitepaper</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/case-studies">Case Studies</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/industries">Industries</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/medical-compressed-air-systems">Medical Systems</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/special-gases">Special Gases</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/oilfree">Oil-free compressed air</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/analytics">BOGE analytics</a></li>
 													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/en/solutions" class="underlink">Overview</a></div>
 												</ul>
 											</div>
 										</li>
-										<li class="nav-item dropdown position-static px-2">
+										<li class="nav-item dropdown position-static list-group-item border-white px-2">
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">										
 												<ul class="list-unstyled p-0">
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/helpline">24/7 Helpline</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/original-parts">Original/Maintenance Parts</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/planning-and-diagnostic">Planning/Diagnostic Tools</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="https://support.boge.com/myBOGE/en/spare-parts-shop" target="_blank">Spare Parts Shop</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/maintenance-and-warranty">Maintenance and Warranty</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/financing">Financing</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/customer-service">Customer Service</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/remote-monitoring">Remote Monitoring</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/service-seminars">Service Seminars</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/compendium">Compendium</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/24h-recovery">24h Recovery</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/helpline">24/7 Helpline</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/original-parts">Original/Maintenance Parts</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/planning-and-diagnostic">Planning/Diagnostic Tools</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="https://support.boge.com/myBOGE/en/spare-parts-shop" target="_blank">Spare Parts Shop</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/maintenance-and-warranty">Maintenance and Warranty</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/financing">Financing</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/customer-service">Customer Service</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/remote-monitoring">Remote Monitoring</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/service-seminars">Service Seminars</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/compendium">Compendium</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/24h-recovery">24h Recovery</a></li>
 													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/en/services" class="underlink">Overview</a></div>
 												</ul>
 											</div>
 										</li>
-										<li class="nav-item dropdown position-static px-2">
+										<li class="nav-item dropdown position-static list-group-item border-white px-2">
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/about-us">About us</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/our-locations">Our Locations</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/history">History</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/partners-and-associations">Partners and Associations</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/fairs-exhibitions">Fairs &amp; Dates</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/seminars">Seminars</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/quality-certifications">Quality and Certifications</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/airmag">Newsletter/Customer Magazine</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/boge-updates">BOGE Updates</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/press-information">Press Information</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/general-terms">GTC</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/about-us">About us</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/our-locations">Our Locations</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/history">History</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/partners-and-associations">Partners and Associations</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/fairs-exhibitions">Fairs &amp; Dates</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/seminars">Seminars</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/quality-certifications">Quality and Certifications</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/airmag">Newsletter/Customer Magazine</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/boge-updates">BOGE Updates</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/press-information">Press Information</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/general-terms">GTC</a></li>
 													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/en/company" class="underlink">Overview</a></div>
 												</ul>
 											</div>
 										</li>
-										<li class="nav-item dropdown position-static pl-2 pr-0">
+										<li class="nav-item dropdown position-static list-group-item border-white pl-2 pr-0">
 											<a class="btn dropdown-toggle text-primary pr-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Carrers</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/training-study">Training &amp; Study</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/traineeships-working-students">Traineeships &amp; Students</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/career-entrants">Career Entrants</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/experienced-professionals">Experienced Professionals</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/current-vacancies">Jobs &amp; Applications</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/working-at-boge">Working at BOGE</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/people-at-boge">People at BOGE</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/csr">CSR</a></li>
-													<li class="border-right float-left col-4 pl-3"><a class="text-dark" href="/en/social-media">Social Media</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/training-study">Training &amp; Study</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/traineeships-working-students">Traineeships &amp; Students</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/career-entrants">Career Entrants</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/experienced-professionals">Experienced Professionals</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/current-vacancies">Jobs &amp; Applications</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/working-at-boge">Working at BOGE</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/people-at-boge">People at BOGE</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/csr">CSR</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/social-media">Social Media</a></li>
 													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/en/careers" class="underlink">Overview</a></div>
 												</ul>										
 											</div>
@@ -597,6 +604,7 @@
 		</div>
 	</footer>
 	<!-- Конец подвала -->
+	
 	<!-- Лейбл с контактными данными -->
 	<div class="contacts z-index-tooltip col-2 pr-0">
 		<div class="bg-light p-2 text-center">

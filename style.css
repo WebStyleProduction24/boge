@@ -110,7 +110,7 @@ footer .navbar-nav a {
 	padding: 9px;
 	width: 50px;
 }
-.form-control {
+.navbar-1 .form-control {
 	font-size: .95rem;
 	height: 25px;
 }
@@ -551,6 +551,26 @@ a.prnt {
 	display: none;
 }
 
+/*Закрытие меню*/
+.navbar-toggler > .fa-times, .navbar-toggler > .fa-bars {
+	font-size: 1.65rem;
+}
+.navbar-toggler > .fa-times{
+	display: none;
+}
+.navbar-toggler > .fa-bars{
+	display: block;
+}
+.navbar-toggler:not(.collapsed) {
+	border: none;
+}
+.navbar-toggler:not(.collapsed) > .fa-times{
+	display: block;
+}
+.navbar-toggler:not(.collapsed) > .fa-bars{
+	display: none;
+}
+
 @media (min-width: 1200px) {
 	.contacts {
 		display: block;
@@ -573,7 +593,49 @@ a.prnt {
 	}
 }
 
+@media (min-width: 769px) {
+
+	#navbarSupportedContent-2 {
+		background: none;
+	}
+	#navbarSupportedContent-2 li {
+		border: none;
+	}
+}
+
 @media (max-width: 768px) {
+	#navbarSupportedContent-2 {
+		position: absolute;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		z-index: 1000000;
+		background: #f8f9fa;
+	}
+	#navbarSupportedContent-2 li {
+		width: 100%;
+		background: #f8f9fa;
+	}
+	#navbarSupportedContent-2 li li {
+		border:none !important;
+		float: none !important;
+	}
+	#navbarSupportedContent-2 button {
+		right: 0;
+		top: 0;
+	}
+	#navbarSupportedContent-2	.bg-white {
+		display: none;
+	}
+	#navbarSupportedContent-2 .dropdown-menu {
+		border: none;
+	}
+	.position-inherit-mw-768 {
+		position: inherit;
+	}
+	.navbar-1{
+		height: inherit;
+	}
 	.alert-dismissible {
 		padding-right: 0;
 	}
@@ -623,4 +685,7 @@ a.prnt {
 	.slider-text h2 {
 		font-size: 1.75rem;
 	}
+	/*.navbar-1 .collapse {
+		display: block;
+	}*/
 }
