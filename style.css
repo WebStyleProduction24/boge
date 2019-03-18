@@ -665,4 +665,7 @@ a.prnt {
 	.slider-text h2 {
 		font-size: 1.75rem;
 	}
+	/*.navbar-1 .collapse {
+		display: block;
+	}*/
 }
