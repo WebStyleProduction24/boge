@@ -55,14 +55,14 @@ main {
 .cursor-pointer {
 	cursor: pointer;
 }
-.navbar-2 li.dropdown>a, footer .navbar-nav a {
+.navbar-2 li.dropdown>a, footer .navbar-nav a, footer .justify-content-between a  {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
 	letter-spacing: .025em;
 }
 .navbar-2 li.dropdown>a {
 	font-size: 1.25em;
 }
-footer .navbar-nav a {
+footer .navbar-nav a, footer .justify-content-between a {
 	font-size: 1rem
 }
 .pfeil-button {
@@ -318,11 +318,6 @@ footer .navbar-nav a {
 	background-color: #222;
 	padding: 2px 16px;
 	color: white;
-}
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 .column {
 	float: left;
@@ -598,6 +593,12 @@ footer li {
 	}
 }
 
+@media (min-width: 992px) {
+	footer .list-group-item {
+		border:none;
+	}	
+}
+
 @media (min-width: 769px) {
 
 	#navbarSupportedContent-2 {
@@ -609,11 +610,6 @@ footer li {
 }
 
 @media (max-width: 991px) {	
-	.ext {
-		width: 100%;
-		float: left !important;
-		text-align: left;
-	}
 	#navbarSupportedContent-2 {
 		position: absolute;
 		top: 65px;
@@ -695,12 +691,24 @@ footer li {
 		position: absolute;
 	}
 
+	/*Подвал*/
+	.ext {
+		background-position-y:bottom;
+		height: 40px;
+		width: 50%;
+		float: left !important;
+		text-align: left;
+	}
+
 	/*Навигация в подвале*/
 	footer .collapse {
 		display: block !important;
 	}
 	footer li {
 		border-bottom: 1px solid rgba(255,255,255,.25) !important;
+	}
+	footer .list-group-item {
+    padding: .15rem 1.25rem;
 	}
 }
 
@@ -719,11 +727,22 @@ footer li {
 
 
 @media (max-width: 575px) {	
+	.copyright {
+		padding: 0;
+		text-align: left !important;
+		font-size: 13px;
+	}
+	.ext {
+		width: 100%;
+	}
 	.carousel img {
 		width: auto !important;
 		height: 150px;
 	}
 	.slider-text h2 {
 		font-size: 1.75rem;
+	}
+	.footer-2 .text-right {
+		text-align: left !important;
 	}
 }
