@@ -585,6 +585,9 @@ footer li {
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
 	}
+	.navbar-1 .navbar {
+		float: left !important;
+	}
 }
 
 @media (max-width: 1100px) {
