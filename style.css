@@ -578,7 +578,7 @@ footer li {
 
 /*Блок Services на странице продукта*/
 #services {
-	height: 450px;
+	min-height: 450px;
 }
 .product-details-circular-menu {
 	-moz-border-radius: 135px;
@@ -752,6 +752,12 @@ footer li {
 	width: 226px;
 }
 
+@media (max-width: 1199px) {
+	.product-details-circular-menu + ul {
+		width: 80%;
+	}
+}
+
 @media (min-width: 1200px) {
 	.contacts {
 		left: auto;
@@ -802,7 +808,31 @@ footer li {
 	}
 }
 
-@media (max-width: 991px) {		
+@media (max-width: 991px) {
+	#pills-home {
+		overflow-x: auto;
+	}
+	.product-details-circular-menu {
+		display: none;
+	}	
+	.product-details-circular-menu + ul {
+		margin: 17px 0 0;
+	}
+	.product-details-circular-menu + ul li {
+		height: 40px;
+		margin: 0 0 15px;
+	}
+	.product-details-circular-menu + ul li .service-icons, .product-details-circular-menu + ul li label {
+		position: static;
+    float: left;
+    margin-right: 15px;
+	}
+	.product-details-circular-menu + ul li label {
+		height: 40px;
+		border-bottom: 0;
+		margin-left: 0;
+		width: auto !important;
+	}
 	.contacts {
 		left: 50%;
 	}
@@ -925,7 +955,28 @@ footer li {
 }
 
 
-@media (max-width: 575px) {	
+@media (max-width: 575px) {
+	.product-details-circular-menu + ul {
+		width: 100%;
+	}
+	.product-details-circular-menu + ul li label {
+		margin-right: 0;
+	}
+	.product-details-circular-menu + ul li .service-icons {
+		margin-right: 9px;
+	}
+	.bg-products-page, .bg-compressors-page {
+		height: inherit;
+	}
+	#overview-tab, #technical-detail-tab, #downloads-tab, #product-variations-tab, #services-tab {
+		border: 1px solid #dee2e6!important;
+	}
+	.breadcrumb {
+		height: 100px;
+	}
+	.breadcrumb span.container {
+		display: none;
+	}
 	body {
 		position: relative;
 		top: 68px;
