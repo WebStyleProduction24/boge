@@ -767,7 +767,7 @@ footer li {
 		font-size: 1.25rem;
 	}
 	.carousel-inner::after, .breadcrumb::after {
-		width: 800px;
+		width: 60%;
 	}
 	.navbar-1 .navbar {
 		float: left !important;
