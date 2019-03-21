@@ -55,14 +55,14 @@ main {
 .cursor-pointer {
 	cursor: pointer;
 }
-.navbar-2 li.dropdown>a, footer .navbar-nav a {
+.navbar-2 li.dropdown>a, footer .navbar-nav a, footer .justify-content-between a  {
 	font-family: "Helvetica Neue LT W02_77 Bd Cn",Helvetica,Arial;
 	letter-spacing: .025em;
 }
 .navbar-2 li.dropdown>a {
 	font-size: 1.25em;
 }
-footer .navbar-nav a {
+footer .navbar-nav a, footer .justify-content-between a {
 	font-size: 1rem
 }
 .pfeil-button {
@@ -319,11 +319,6 @@ footer .navbar-nav a {
 	padding: 2px 16px;
 	color: white;
 }
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 .column {
 	float: left;
 	width: 16.66%;
@@ -547,8 +542,13 @@ a.prnt {
 }
 
 /*Лейбл с контактными данными*/
-.contacts {
-	display: none;
+	.contacts {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: .9;
+	}
 }
 
 /*Закрытие меню*/
@@ -578,11 +578,8 @@ footer li {
 
 @media (min-width: 1200px) {
 	.contacts {
-		display: block;
-		position: fixed;
-		top: 0;
+		left: auto;
 		right: 0;
-		opacity: .9;
 	}
 	.contacts, .contacts .title {
 		font-size: 1.25rem;
@@ -590,12 +587,27 @@ footer li {
 	.carousel-inner::after, .breadcrumb::after {
 		width: 800px;
 	}
+	.navbar-1 .navbar {
+		float: left !important;
+	}
+	.expand-on-click {
+		width: 75%;
+	}
+	#collapseExample .form-control {
+		width: 70%;
+	}
 }
 
 @media (max-width: 1100px) {
 	.breadcrumb span {
 		padding: 50px 0px;
 	}
+}
+
+@media (min-width: 992px) {
+	footer .list-group-item {
+		border:none;
+	}	
 }
 
 @media (min-width: 769px) {
@@ -608,11 +620,12 @@ footer li {
 	}
 }
 
-@media (max-width: 991px) {	
-	.ext {
-		width: 100%;
-		float: left !important;
-		text-align: left;
+@media (max-width: 991px) {		
+	.contacts {
+		left: 50%;
+	}
+	.contacts > div {
+		margin-left: -100%;
 	}
 	#navbarSupportedContent-2 {
 		position: absolute;
@@ -695,6 +708,15 @@ footer li {
 		position: absolute;
 	}
 
+	/*Подвал*/
+	.ext {
+		background-position-y:bottom;
+		height: 40px;
+		width: 50%;
+		float: left !important;
+		text-align: left;
+	}
+
 	/*Навигация в подвале*/
 	footer .collapse {
 		display: block !important;
@@ -702,9 +724,12 @@ footer li {
 	footer li {
 		border-bottom: 1px solid rgba(255,255,255,.25) !important;
 	}
+	footer .list-group-item {
+    padding: .15rem 1.25rem;
+	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {	
 	.display-sm-none {
 		display: none !important;
 	}
@@ -719,11 +744,32 @@ footer li {
 
 
 @media (max-width: 575px) {	
+	body {
+		position: relative;
+		top: 68px;
+	}
+	.contacts {
+		left: auto;
+	}
+	.contacts > div {
+		margin-left: inherit;
+	}
+	.copyright {
+		padding: 0;
+		text-align: left !important;
+		font-size: 13px;
+	}
+	.ext {
+		width: 100%;
+	}
 	.carousel img {
 		width: auto !important;
 		height: 150px;
 	}
 	.slider-text h2 {
 		font-size: 1.75rem;
+	}
+	.footer-2 .text-right {
+		text-align: left !important;
 	}
 }
