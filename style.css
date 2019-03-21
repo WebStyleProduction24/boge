@@ -542,8 +542,13 @@ a.prnt {
 }
 
 /*Лейбл с контактными данными*/
-.contacts {
-	display: none;
+	.contacts {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: .9;
+	}
 }
 
 /*Закрытие меню*/
@@ -573,11 +578,8 @@ footer li {
 
 @media (min-width: 1200px) {
 	.contacts {
-		display: block;
-		position: fixed;
-		top: 0;
+		left: auto;
 		right: 0;
-		opacity: .9;
 	}
 	.contacts, .contacts .title {
 		font-size: 1.25rem;
@@ -587,6 +589,12 @@ footer li {
 	}
 	.navbar-1 .navbar {
 		float: left !important;
+	}
+	.expand-on-click {
+		width: 75%;
+	}
+	#collapseExample .form-control {
+		width: 70%;
 	}
 }
 
@@ -612,7 +620,13 @@ footer li {
 	}
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {		
+	.contacts {
+		left: 50%;
+	}
+	.contacts > div {
+		margin-left: -100%;
+	}
 	#navbarSupportedContent-2 {
 		position: absolute;
 		top: 65px;
@@ -715,7 +729,7 @@ footer li {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {	
 	.display-sm-none {
 		display: none !important;
 	}
@@ -730,6 +744,16 @@ footer li {
 
 
 @media (max-width: 575px) {	
+	body {
+		position: relative;
+		top: 68px;
+	}
+	.contacts {
+		left: auto;
+	}
+	.contacts > div {
+		margin-left: inherit;
+	}
 	.copyright {
 		padding: 0;
 		text-align: left !important;
