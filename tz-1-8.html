@@ -246,7 +246,8 @@
 				<div class="col p-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
 				<div class="col p-3">
 					<form class="form-inline my-2 my-lg-0">									
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">						
+						<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
 			</div>
@@ -357,169 +358,127 @@
 								</div>
 							</div>
 						</form>
-
-						<div class="filter-tabs-wraper" style="display: block;">
-							<div class="tab tab2" style="display: block;">
-								<div class="tabs-heading-1">Compression mode</div>
-								<div class="tab-content range-slider-tab">
-
-									<div class="range-slider-container slider-switch-target motor_power_kw" style="display: block;">
-										<input class="range-slider dummy" name="motor_power_kw_range" type="hidden" data-range="2,355" value="2,355" style="display: none;">
-										<div class="slider-container theme-green" style="width: 860px;">
-											<div class="back-bar">
-												<div class="selected-bar" style="width: 860px; left: 0px;"></div>
-												<div class="pointer low" style="left: -20px;"></div>
-												<div class="pointer-label" style="left: 0px;">2</div>
-												<div class="pointer high" style="left: 840px;"></div>
-												<div class="pointer-label" style="left: 837px;">355</div>
-												<div class="clickable-dummy"></div>
-											</div>
-											<div class="scale"><span style="left: 0%"><ins style="margin-left: -4px;">2</ins></span><span style="left: 100%"><ins style="margin-left: -11.5px;">355</ins></span></div>
-										</div>
-									</div>
-									<div class="range-slider-container slider-switch-target fad_m3_min" style="display: none;">
-										<input class="range-slider dummy" name="fad_m3_min_range" type="hidden" data-range="0,44" value="0,44" style="display: none;">
-										<div class="slider-container theme-green" style="width: 860px;">
-											<div class="back-bar">
-												<div class="selected-bar" style="width: 860px; left: 0px;"></div>
-												<div class="pointer low" style="left: -20px;"></div>
-												<div class="pointer-label" style="left: 0px;">0</div>
-												<div class="pointer high" style="left: 840px;"></div>
-												<div class="pointer-label" style="left: 844px;">44</div>
-												<div class="clickable-dummy"></div>
-											</div>
-											<div class="scale"><span style="left: 0%"><ins style="margin-left: -4px;">0</ins></span><span style="left: 100%"><ins style="margin-left: -8px;">44</ins></span></div>
-										</div>
-									</div>
-									<div class="range-slider-mobile-container clear-after">
-										<div class="slider-switch-target motor_power_kw">
-											<div class="form-item form-type-textfield form-item-field-product-motor-power-kw-value-min">
-												<label for="edit-field-product-motor-power-kw-value-min">From (kW) </label>
-												<input class="mb32 form-text" type="text" id="edit-field-product-motor-power-kw-value-min" name="field_product_motor_power_kw_value[min]" value="" size="" maxlength="128">
-											</div>
-											<div class="form-item form-type-textfield form-item-field-product-motor-power-kw-value-max">
-												<label for="edit-field-product-motor-power-kw-value-max">To (kW) </label>
-												<input type="text" id="edit-field-product-motor-power-kw-value-max" name="field_product_motor_power_kw_value[max]" value="" size="" maxlength="128" class="form-text">
-											</div>
-										</div>
-										<div class="slider-switch-target fad_m3_min" style="display: none">
-											<div class="form-item form-type-textfield form-item-field-product-fad-m3-min-value-min">
-												<label for="edit-field-product-fad-m3-min-value-min">From (m<sup>3</sup>/min) </label>
-												<input class="mb32 form-text" type="text" id="edit-field-product-fad-m3-min-value-min" name="field_product_fad_m3_min_value[min]" value="" size="" maxlength="128">
-											</div>
-											<div class="form-item form-type-textfield form-item-field-product-fad-m3-min-value-max">
-												<label for="edit-field-product-fad-m3-min-value-max">To (m<sup>3</sup>/min) </label>
-												<input type="text" id="edit-field-product-fad-m3-min-value-max" name="field_product_fad_m3_min_value[max]" value="" size="" maxlength="128" class="form-text">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab tab3 mbm20 m-mbm32" style="display: none;">
-								<div class="tabs-heading-1">Pressure range</div>
-								<div class="tab-content">
-									<div class="fancy-checkbox clear-after mb20-applier m-mb32-applier pressure_range_anchors">
-										<div class="form-item">
-											<input class="uncheckable dummy" id="pressure_range_10" name="pressure_range" data-min="-1" data-max="10" type="radio">
-											<label for="pressure_range_10">Low (up to 10 bar)</label>
-										</div>
-										<div class="form-item">
-											<input class="uncheckable dummy" id="pressure_range_15" name="pressure_range" data-min="10" data-max="15" type="radio">
-											<label for="pressure_range_15">Medium (up to 15 bar)</label>
-										</div>
-										<div class="form-item">
-											<input class="uncheckable dummy" id="pressure_range_40" name="pressure_range" data-min="15" data-max="40" type="radio">
-											<label for="pressure_range_40">High (up to 40 bar)</label>
-										</div>
-									</div>
-									<div style="display: none">
-										<div class="form-item form-type-select form-item-field-product-pressure-range-tid">
-											<select multiple="multiple" name="field_product_pressure_range_tid[]" id="edit-field-product-pressure-range-tid" size="9" class="form-select">
-												<option value="175">4</option>
-												<option value="101415">6</option>
-												<option value="176">7</option>
-												<option value="177">7.5</option>
-												<option value="178">8</option>
-												<option value="179">10</option>
-												<option value="180">13</option>
-												<option value="181">15</option>
-												<option value="182">25</option>
-												<option value="183">30</option>
-												<option value="927">35</option>
-												<option value="184">40</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab tab4" style="display: none;">
-								<div class="tabs-heading-1">Equipment</div>
-								<div class="tab-content">
-									<ul class="checklisting clear-after mtm20">
-										<li class="head"><b>Heat recovery</b></li>
-										<li class="second-col mb0 m-mbm8">
-											<div id="edit-field-product-heat-recovery-value" class="form-radios all-type fancy-checkbox uncheckable mb20-applier m-mb32-applier slim">
-												<div class="form-item form-type-radio form-item-field-product-heat-recovery-value">
-													<input class="all-type fancy-checkbox uncheckable mb20-applier m-mb32-applier slim form-radio" type="radio" id="edit-field-product-heat-recovery-value-all" name="field_product_heat_recovery_value" value="All" checked="checked"> <label class="option" for="edit-field-product-heat-recovery-value-all">- Any - </label>
-												</div>
-												<div class="form-item form-type-radio form-item-field-product-heat-recovery-value">
-													<input class="all-type fancy-checkbox uncheckable mb20-applier m-mb32-applier slim form-radio" type="radio" id="edit-field-product-heat-recovery-value-1" name="field_product_heat_recovery_value" value="1"> <label class="option" for="edit-field-product-heat-recovery-value-1">Yes </label>
-												</div>
-											</div>
-										</li>
-									</ul>
-									<ul class="checklisting clear-after m-mt4">
-										<li class="head"><b>Sound absorption</b></li>
-										<li class="second-col mb0 m-mbm8">
-											<div class="fancy-checkbox mb20-applier m-mb32-applier slim form-select">
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-sound-absorption-tid-153" name="field_product_sound_absorption_tid[]" value="153" type="checkbox"><label for="edit-field-product-sound-absorption-tid-153">non silenced</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-sound-absorption-tid-154" name="field_product_sound_absorption_tid[]" value="154" type="checkbox"><label for="edit-field-product-sound-absorption-tid-154">silenced</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-sound-absorption-tid-155" name="field_product_sound_absorption_tid[]" value="155" type="checkbox"><label for="edit-field-product-sound-absorption-tid-155">super silenced</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-sound-absorption-tid-156" name="field_product_sound_absorption_tid[]" value="156" type="checkbox"><label for="edit-field-product-sound-absorption-tid-156">super silenced (optionally)</label></div>
-											</div>
-										</li>
-									</ul>
-									<ul class="checklisting clear-after m-mt4">
-										<li class="head"><b>Delivery control</b></li>
-										<li class="second-col mb0 m-mbm8">
-											<div class="fancy-checkbox mb20-applier m-mb32-applier slim form-select">
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-delivery-control-tid-159" name="field_product_delivery_control_tid[]" value="159" type="checkbox"><label for="edit-field-product-delivery-control-tid-159">proportional regulation</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-delivery-control-tid-158" name="field_product_delivery_control_tid[]" value="158" type="checkbox"><label for="edit-field-product-delivery-control-tid-158">variable speed</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-delivery-control-tid-157" name="field_product_delivery_control_tid[]" value="157" type="checkbox"><label for="edit-field-product-delivery-control-tid-157">fixed speed</label></div>
-											</div>
-										</li>
-									</ul>
-									<ul class="checklisting clear-after m-mt4">
-										<li class="head"><b>Cooling</b></li>
-										<li class="second-col mb0 m-mbm8">
-											<div class="fancy-checkbox mb20-applier m-mb32-applier slim form-select">
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-cooling-tid-161" name="field_product_cooling_tid[]" value="161" type="checkbox"><label for="edit-field-product-cooling-tid-161">air cooled</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-cooling-tid-160" name="field_product_cooling_tid[]" value="160" type="checkbox"><label for="edit-field-product-cooling-tid-160">water cooled</label></div>
-											</div>
-										</li>
-									</ul>
-									<ul class="checklisting clear-after mbm20 m-mt4">
-										<li class="head"><b>Other properties</b></li>
-										<li class="second-col mb0 m-mbm12">
-											<div class="fancy-checkbox mb20-applier m-mb32-applier slim form-select">
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-more-properties-tid-142" name="field_product_more_properties_tid[]" value="142" type="checkbox"><label for="edit-field-product-more-properties-tid-142">belt driven</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-more-properties-tid-145" name="field_product_more_properties_tid[]" value="145" type="checkbox"><label for="edit-field-product-more-properties-tid-145">Compressed air station</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-more-properties-tid-141" name="field_product_more_properties_tid[]" value="141" type="checkbox"><label for="edit-field-product-more-properties-tid-141">direct driven</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-more-properties-tid-144" name="field_product_more_properties_tid[]" value="144" type="checkbox"><label for="edit-field-product-more-properties-tid-144">Dryer</label></div>
-												<div class="form-item"><input class="fancy-checkbox m0" id="edit-field-product-more-properties-tid-143" name="field_product_more_properties_tid[]" value="143" type="checkbox"><label for="edit-field-product-more-properties-tid-143">gear driven</label></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
 					</div>
 					<div class="border border-success col-12 collapse" id="collapseExample3" data-parent="#accordionExample">
-						test 3
+						<form action="">
+							<div class="form-group m-3">
+								<div class="row">
+									<div class="col-4 custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange1">
+										<label class="custom-control-label" for="PressureRange1">Low (up to 10 bar)</label>
+									</div>
+									<div class="col-4 custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange2">
+										<label class="custom-control-label" for="PressureRange2">Medium (up to 15 bar)</label>
+									</div>
+									<div class="col-4 custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange3">
+										<label class="custom-control-label" for="PressureRange3">High (up to 40 bar)</label>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 					<div class="border border-success col-12 collapse" id="collapseExample4" data-parent="#accordionExample">
-						test 4
+						<form action="">
+							<div class="form-group m-3">
+								<div class="row border-bottom pb-3">
+									<div class="col-3 title">Heat recovery</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentHeatRecovery">
+												<label class="custom-control-label" for="EquipmentHeatRecovery">Yes</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom pb-3 pt-3">
+									<div class="col-3 title">Sound absorption</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption1">
+												<label class="custom-control-label" for="EquipmentSoundAbsorption1">non silenced</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption2">
+												<label class="custom-control-label" for="EquipmentSoundAbsorption2">silenced</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+												<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+												<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced (optionally)</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom pb-3 pt-3">
+									<div class="col-3 title">Delivery control</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl1">
+												<label class="custom-control-label" for="EquipmentDeliveryControl1">proportional regulation</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl2">
+												<label class="custom-control-label" for="EquipmentDeliveryControl2">water cooled</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl3">
+												<label class="custom-control-label" for="EquipmentDeliveryControl3">fixed speed</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom pb-3 pt-3">
+									<div class="col-3 title">Cooling</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentCooling1">
+												<label class="custom-control-label" for="EquipmentCooling1">air cooled</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentCooling2">
+												<label class="custom-control-label" for="EquipmentCooling2">water cooled</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col-3 title">Other properties</div>
+									<div class="col-9">
+										<div class="row">
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties1">
+												<label class="custom-control-label" for="EquipmentOtherProperties1">belt driven</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties2">
+												<label class="custom-control-label" for="EquipmentOtherProperties2">Compressed air station</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties3">
+												<label class="custom-control-label" for="EquipmentOtherProperties3">oil lubricated</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties4">
+												<label class="custom-control-label" for="EquipmentOtherProperties4">oil lubricated</label>
+											</div>
+											<div class="col-4 custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties5">
+												<label class="custom-control-label" for="EquipmentOtherProperties5">oil lubricated</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 
 				</div>
@@ -609,210 +568,13 @@
 					<a href="#"><img src="images/public/search-product/C_10_LDR_Paintline_base_12.png" alt="" class="border bg-light"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor Paintline 5.5 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/C_10_LDR_Paintline_base_3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor Paintline 7.5 up to 11 kW</h6></a>
+
+				<div class="col-12 text-center after-posts">
+					<button class="btn btn-outline-success load-more" type="button">
+						Load more <i class="ml-2 fas fa-angle-double-down"></i><span class="ml-2 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					</button>
 				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SL_31-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SL Series up to 22 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-slf-40-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SLF 22 up to 30 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sldf-40-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SLDF 22 up to 30 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-s-40-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S Series 22 up to 45 kW </h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sd-60-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SD 22 up to 45 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/S_31-3_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SF 22 up to 45 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SD_50-3_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SDF 22 up to 45 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SL_31-3_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SL Series 45 up to 55 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-slf-75-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SLF 45 up to 55 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-s-75-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S Series 45 up to 75 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sd-100-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SD 45 up to 75 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sf-100-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SF 45 up to 75 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SD_61-3_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SDF 45 up to 75 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SLF_125-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SL Series up to 75 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-slf-101-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SLF 75 up to 90 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sg-150-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SG Series 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SG_150-3_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SGF 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-s-101-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S Series 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sd-101-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SD 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/S_150-3_1.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SF 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/S_150-3_2.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SDF 75 up to 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/S_151.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S Series 110 up to 160 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-s-111-4-lf.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S-4 from 110 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-slf-181-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SLF 132 up to 200 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sl-340.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SL Series 200 up to 250 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SL_270_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor S Series 200 up to 250 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-sl-431-3.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor SL Series 250 up to 355 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-p-2-l.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston compressor P…L 0.65 up to 1.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-p-2-ltr.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston compressor P...LTR 0.65 up to 1.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-p-2-lr.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston compressor P...LR 0.65 up to 1.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-p-2-ldr.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston compressor P...LDR 0.65 up to 1.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRD_350_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRD 2.2 up to 6.3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBD_350-_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SBD...– 2.2 up to 6.3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRDL_350_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRDL 2.2 up to 6.3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBDL_350-_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SBDL...– 2.2 up to 6.3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SR_270_2.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SR 1.5 up to 3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-sb.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SB...– 1.5 up to 3 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRM_610_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SR 4 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBM_610-_6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SB...– 4 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-sc-6.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SC 4 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/boge-kolbenkompressor-sc-6_0.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SC 2,2 up to 15 kW (15 bar)</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRD_350_9.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRMD 3.2 up to 4 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBD_350-_14.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SBMD...– 3.2 up to 4 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRDL_350_11.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRMDL 3.2 up to 5.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBDL_350-_13.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SBMDL...– 3.2 up to 5.5 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRM_610_13.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRM 2.2 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SBM_610-_13.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SBM...– 2.2 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRH_330_5.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRH 3 up to 11 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRHV_420-10_22.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRMV 5.5 up to 15 kW</h6></a>
-				</div>
-				<div class="col-3 mb-4">
-					<a href="#"><img src="images/public/search-product/SRHV_420-10_8.png" alt="" class="border bg-light"></a>
-					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Piston Compressor SRHV 5.5 up to 18.5 kW</h6></a>
-				</div>
+
 			</div>
 		</section>
 
@@ -953,6 +715,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/up-scroll.js"></script>
 	<script type="text/javascript" src="js/images-show.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
 
 	<script>
 

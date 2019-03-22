@@ -528,6 +528,9 @@ a.prnt {
 }
 
 /*Переключаемые вкладки*/
+#collapseExample4 .title{
+	font-size: 1.125rem
+}
 .nav-pills .nav-link.active {
 	background-color: #f8f9fa !important;
 }
@@ -775,7 +778,17 @@ footer li {
 	color: #71a61e;
 	margin-right: 5px;
 	font-size: 18px;
-
+}
+/*Кнопка поиска*/
+form.form-inline input {
+	width: 100% !important;
+}
+form.form-inline button {
+	right: 8px;
+}
+/*Кнопка со спиннером*/
+.load-more span {
+	display: none;
 }
 
 @media (max-width: 1199px) {
