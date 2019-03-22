@@ -157,6 +157,9 @@ footer .navbar-nav a, footer .justify-content-between a {
 	width: 100%;
 	z-index: 2;
 }
+.support-header .logo::before {
+	display: none;
+}
 .carousel-inner::after, .breadcrumb::after {
 	position: absolute;
 	bottom: -24px;
@@ -341,7 +344,7 @@ footer .navbar-nav a, footer .justify-content-between a {
 	background: -ms-linear-gradient(-45deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
 	background: linear-gradient(135deg,#1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#2989d8 101%);
 }
-.footer-1, .breadcrumb {
+.footer-1, .breadcrumb, .support-header, .support-footer {
 	background: #002e6b;
 	background: -moz-linear-gradient(-45deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	background: -webkit-gradient(left top,right bottom,color-stop(0%,#002e6b),color-stop(40%,#002e6b),color-stop(60%,#0072b9),color-stop(100%,#0072b9));
@@ -351,6 +354,9 @@ footer .navbar-nav a, footer .justify-content-between a {
 	background: linear-gradient(135deg,#002e6b 0%,#002e6b 40%,#0072b9 60%,#0072b9 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e6b',endColorstr='#0072b9',GradientType=1);
 }
+.support-main {
+	margin-bottom: 100px;	
+}
 
 /*Подвал*/
 .footer-1 {
@@ -359,7 +365,15 @@ footer .navbar-nav a, footer .justify-content-between a {
 footer {
 	position: relative;
 }
-
+.support-footer {
+	bottom: 0;
+}
+.support-footer a{
+	font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+.support-footer >div::before, .support-footer >div::after {
+	display: none;
+}
 footer > div::after {
 	position: absolute;
 	content: "";
@@ -475,7 +489,7 @@ a.prnt {
 
 /*z-index*/
 .z-index-tooltip {
-	z-index: 1000;
+	z-index: 10000;
 }
 
 /*Карусель на странице Compressors*/
@@ -655,9 +669,7 @@ footer li {
 .product-details-circular-menu + ul li:hover .service-icons {
 	background-color: #002f6b;
 	cursor: pointer;
-
 }
-
 .product-details-circular-menu + ul li .icon-1 {
 	left: 366px;
 	top: 60px;
@@ -698,7 +710,6 @@ footer li {
 	left: 287px;
 	top: 95px;
 }
-
 .product-details-circular-menu + ul li .text-1 {
 	left: 0;
 	top: 15px;
@@ -752,6 +763,21 @@ footer li {
 	width: 226px;
 }
 
+/*Страница Support*/
+.support-block {
+	height: 220px;
+}
+.support-main li {
+	list-style: none;
+}
+.support-main li:before {
+	content: "»";	
+	color: #71a61e;
+	margin-right: 5px;
+	font-size: 18px;
+
+}
+
 @media (max-width: 1199px) {
 	.product-details-circular-menu + ul {
 		width: 80%;
@@ -767,7 +793,7 @@ footer li {
 		font-size: 1.25rem;
 	}
 	.carousel-inner::after, .breadcrumb::after {
-		width: 800px;
+		width: 60%;
 	}
 	.navbar-1 .navbar {
 		float: left !important;
@@ -838,6 +864,12 @@ footer li {
 	}
 	.contacts > div {
 		margin-left: -100%;
+	}
+	.support-contacts  {
+		left: 0 !important;
+	}
+	.support-contacts > div {
+		margin-left: 0 !important;
 	}
 	#navbarSupportedContent-2 {
 		position: absolute;
@@ -956,6 +988,9 @@ footer li {
 
 
 @media (max-width: 575px) {
+	.support-footer div div div.col-8 span, .support-footer div div div.col-8 a {
+		font-size: 12px !important;
+	}
 	.product-details-circular-menu + ul {
 		width: 100%;
 	}
