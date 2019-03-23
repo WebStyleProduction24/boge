@@ -848,6 +848,15 @@ form.form-inline button {
 }
 
 @media (max-width: 991px) {
+	#accordionExample > div {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	#accordionExample > div button {
+		font-size: .85rem;
+		padding-right: .65rem;
+		padding-left: .65rem;
+	}
 	#pills-home, #pills-profile {
 		overflow-x: auto;
 	}
