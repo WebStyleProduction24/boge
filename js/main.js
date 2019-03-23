@@ -19,7 +19,6 @@ $(function () {
 				setTimeout(function () {
 					loader.removeClass('d-inline-block');
 					btn.attr('disabled', false);
-					console.log(responce);
 					$('.after-posts').before(responce);
 					$('.fa-angle-double-down').removeClass('d-none');
 					if (number == 3) {
