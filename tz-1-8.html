@@ -251,11 +251,11 @@
 					</form>
 				</div>
 			</div>
-			<div class="row m-0 pt-3 bg-light" id="accordionExample">
+			<div class="row m-0 pt-3 bg-light d-none d-sm-flex" id="accordionExample">
 				<div class="col-3 text-success">
 					<p class="h-100 position-relative">
-						<button id="btn-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample1">
-							<i class="fas fa-caret-down mr-2" id="btn-fas-1"></i>
+						<button id="btn-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample1" >
+							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-1"></i>
 							Type
 						</button>
 					</p>
@@ -263,7 +263,7 @@
 				<div class="col-3 text-success">
 					<p class="h-100 position-relative">
 						<button id="btn-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample2" >
-							<i class="fas fa-caret-down mr-2" id="btn-fas-2"></i>
+							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-2"></i>
 							Compression mode
 						</button>
 					</p>
@@ -271,7 +271,7 @@
 				<div class="col-3 text-success">
 					<p class="h-100 position-relative">
 						<button id="btn-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample3" >
-							<i class="fas fa-caret-down mr-2" id="btn-fas-3"></i>
+							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-3"></i>
 							Pressure range
 						</button>
 					</p>
@@ -279,7 +279,7 @@
 				<div class="col-3 text-success">
 					<p class="h-100 position-relative">
 						<button id="btn-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample4" >
-							<i class="fas fa-caret-down mr-2" id="btn-fas-4"></i>
+							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-4"></i>
 							Equipment
 						</button>
 					</p>
@@ -482,89 +482,292 @@
 					</div>
 
 				</div>
+			</div>
 
+			<div class="row m-0 pt-3 bg-light d-block d-sm-none" id="accordionExampleMobile">
+				<div class="text-success">
+					<p class="h-100 position-relative">
+						<button id="btn-mobile-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile1">
+							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-1"></i>
+							Type
+						</button>
+					</p>
+				</div>
+				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile1" data-parent="#accordionExampleMobile">
+					<form action="">
+						<div class="form-group m-3">
+							<div class="border-bottom pb-3">
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios1" value="option1" checked="checked">
+									<label class="custom-control-label" for="typeRadios1">- Any -</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios2" value="option2">
+									<label class="custom-control-label" for="typeRadios2">Screw Compressor</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios3" value="option3">
+									<label class="custom-control-label" for="typeRadios3">Scroll Compressor</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios4" value="option4">
+									<label class="custom-control-label" for="typeRadios4">Piston Compressor</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios5" value="option5" disabled="disabled">
+									<label class="custom-control-label" for="typeRadios5">Turbo Compressor</label>
+								</div>
+							</div>
+							<div class="pt-3">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck1">
+									<label class="custom-control-label" for="customCheck1">- Any - </label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck2">
+									<label class="custom-control-label" for="customCheck2">oil free</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck3">
+									<label class="custom-control-label" for="customCheck3">oil lubricated</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="text-success">
+					<p class="h-100 position-relative">
+						<button id="btn-mobile-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile2">
+							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-2"></i>
+							Compression mode
+						</button>
+					</p>
+				</div>
+				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile2" data-parent="#accordionExampleMobile">
+					<form action="">
+						<div class="form-group m-3">
+							<div class="border-bottom pb-3">
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios1" value="option1" checked="checked">
+									<label class="custom-control-label" for="modeRadios1">Motor power kW</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios2" value="option2">
+									<label class="custom-control-label" for="modeRadios2">FAD m<sup>3</sup>/min</label>
+								</div>
+							</div>
+							<div class="">
+
+								<label for="customRange3">Example range</label>
+								<input type="range" class="custom-range" min="2" max="355" step="1" id="customRange3">
+								<div id="slider-range"></div>
+
+								<input class="form-control" name="price" id="price">
+								<div id="slider-range"></div>
+
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="text-success">
+					<p class="h-100 position-relative">
+						<button id="btn-mobile-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile3">
+							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-3"></i>
+							Pressure range
+						</button>
+					</p>
+				</div>
+				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile3" data-parent="#accordionExampleMobile">
+					<form action="">
+						<div class="form-group m-3">
+							<div class="">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="PressureRange1">
+									<label class="custom-control-label" for="PressureRange1">Low (up to 10 bar)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="PressureRange2">
+									<label class="custom-control-label" for="PressureRange2">Medium (up to 15 bar)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="PressureRange3">
+									<label class="custom-control-label" for="PressureRange3">High (up to 40 bar)</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="text-success">
+					<p class="h-100 position-relative">
+						<button id="btn-mobile-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile4">
+							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-4"></i>
+							Equipment
+						</button>
+					</p>
+				</div>
+				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile4" data-parent="#accordionExampleMobile">
+					<form action="">
+						<div class="form-group m-3">
+							<div class="border-bottom pb-3">
+								<div class="title">Heat recovery</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentHeatRecovery">
+									<label class="custom-control-label" for="EquipmentHeatRecovery">Yes</label>
+								</div>
+							</div>
+							<div class="border-bottom pb-3 pt-1">
+								<div class="title">Sound absorption</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption1">
+									<label class="custom-control-label" for="EquipmentSoundAbsorption1">non silenced</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption2">
+									<label class="custom-control-label" for="EquipmentSoundAbsorption2">silenced</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+									<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+									<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced (optionally)</label>
+								</div>
+							</div>
+							<div class="border-bottom pb-3 pt-1">
+								<div class="title">Delivery control</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl1">
+									<label class="custom-control-label" for="EquipmentDeliveryControl1">proportional regulation</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl2">
+									<label class="custom-control-label" for="EquipmentDeliveryControl2">water cooled</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl3">
+									<label class="custom-control-label" for="EquipmentDeliveryControl3">fixed speed</label>
+								</div>
+							</div>
+							<div class="border-bottom pb-3 pt-1">
+								<div class="title">Cooling</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentCooling1">
+									<label class="custom-control-label" for="EquipmentCooling1">air cooled</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentCooling2">
+									<label class="custom-control-label" for="EquipmentCooling2">water cooled</label>
+								</div>
+							</div>
+							<div class="pt-1">
+								<div class="title">Other properties</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties1">
+									<label class="custom-control-label" for="EquipmentOtherProperties1">belt driven</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties2">
+									<label class="custom-control-label" for="EquipmentOtherProperties2">Compressed air station</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties3">
+									<label class="custom-control-label" for="EquipmentOtherProperties3">oil lubricated</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties4">
+									<label class="custom-control-label" for="EquipmentOtherProperties4">oil lubricated</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties5">
+									<label class="custom-control-label" for="EquipmentOtherProperties5">oil lubricated</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 		
 		<section class="container mt-5">
 			<div class="row">
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_3_L_base_3.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...L 2.2 up to 5.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_7_LR_base_2_0.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LR 2.2 up to 5.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_4_LDR_base_2.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LDR 2.2 up to 5.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_9_LF_base_2.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LF 2.2 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_9_LFR_base_2.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LFR up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_9_LFDR_base_2.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LFDR 2.2 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_4_base_4.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C series 3 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_7_R.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...R 3.0 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_4_D_base_4.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...D 2.2 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_9_DR.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...DR 3.0 up to 7.5 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-c-10-l.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...L 11 up to 15 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-c-10-lr.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LR 11 up to 15 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-c-10-ldr.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...LDR 7.5 up to 15 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-c-30.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C Series 11 up to 22 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-c-15-d.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...D 11 up to 22 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_15_R.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...R up to 11 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-c-15-dr.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...DR 3 up to 11 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-c-16-f.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...F 11 up to 22 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/boge-schraubenkompressor-c-16-fd.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor C...FD 11 up to 22 kW</h6></a>
 				</div>
-				<div class="col-4 col-lg-3 mb-4">
+				<div class="col-12 col-sm-4 col-lg-3 mb-4">
 					<a href="#"><img src="images/public/search-product/C_10_LDR_Paintline_base_12.png" alt="" class="border bg-light w-100"></a>
 					<a href="#"><h6 class="pt-3 font-weight-bold text-body">Screw Compressor Paintline 5.5 up to 7.5 kW</h6></a>
 				</div>
@@ -774,8 +977,61 @@
 			$('#btn-fas-4').removeClass('fa-caret-up');
 		})
 
+//Скрипт показа выпадающих вкладок на мобилках
 
-	</script>
+$('#collapseExampleMobile1').collapse({
+	toggle: false
+})
+
+$('#collapseExampleMobile1').on('show.bs.collapse', function () {
+	$('#btn-mobile-1').addClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-1').removeClass('fa-caret-down');
+	$('#btn-fas-mobile-1').addClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile1').on('hide.bs.collapse', function () {
+	$('#btn-mobile-1').removeClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-1').addClass('fa-caret-down');
+	$('#btn-fas-mobile-1').removeClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile2').on('show.bs.collapse', function () {
+	$('#btn-mobile-2').addClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-2').removeClass('fa-caret-down');
+	$('#btn-fas-mobile-2').addClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile2').on('hide.bs.collapse', function () {
+	$('#btn-mobile-2').removeClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-2').addClass('fa-caret-down');
+	$('#btn-fas-mobile-2').removeClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile3').on('show.bs.collapse', function () {
+	$('#btn-mobile-3').addClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-3').removeClass('fa-caret-down');
+	$('#btn-fas-mobile-3').addClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile3').on('hide.bs.collapse', function () {
+	$('#btn-mobile-3').removeClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-3').addClass('fa-caret-down');
+	$('#btn-fas-mobile-3').removeClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile4').on('show.bs.collapse', function () {
+	$('#btn-mobile-4').addClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-4').removeClass('fa-caret-down');
+	$('#btn-fas-mobile-4').addClass('fa-caret-up');
+})
+
+$('#collapseExampleMobile4').on('hide.bs.collapse', function () {
+	$('#btn-mobile-4').removeClass('btn-show z-index-tooltip position-absolute pb-4 border-bottom-0');
+	$('#btn-fas-mobile-4').addClass('fa-caret-down');
+	$('#btn-fas-mobile-4').removeClass('fa-caret-up');
+})
+
+</script>
 
 </body>
 </html>
