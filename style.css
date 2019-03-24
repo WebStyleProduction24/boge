@@ -1010,6 +1010,21 @@ form.form-inline button {
 
 
 @media (max-width: 575px) {
+	#accordionExampleMobile > div:first-child .btn-show {
+		top: -16px;
+	}
+	#accordionExampleMobile > div:not(:first-child) .btn-show {
+		top: 0px;
+	}
+	#accordionExampleMobile > div:nth-child(2n) {
+		position: relative;
+	}
+	#accordionExampleMobile > div:nth-child(2n):not(:nth-child(2)) {
+		margin-top: 46px;
+	}
+	#accordionExampleMobile > div:nth-child(2){
+		margin-top: 30px;
+	}
 	.support-footer div div div.col-8 span, .support-footer div div div.col-8 a {
 		font-size: 12px !important;
 	}
