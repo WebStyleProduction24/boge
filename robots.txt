@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow: /15313412/
+Disallow: /_notes/
+Disallow: /Templates/
+Disallow: /bc5e72bcfdae90ffeb1187b27b40095a/
+Disallow: /index_test.html
