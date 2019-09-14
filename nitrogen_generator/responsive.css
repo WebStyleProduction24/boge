@@ -1,0 +1,226 @@
+
+.globalNav_clone {
+	display:none;
+}
+body {
+ min-width: 900px;
+	
+}
+body.noscroll {
+	overflow:hidden;
+	  /*  min-width: 900px;*/
+
+}
+
+@media only screen and (max-width: 1040px),only screen and (max-device-width: 1040px) {
+
+}
+@media only screen and (max-width: 580x),only screen and (max-device-width: 580px) {
+.mobile_menu , .mobile_shirma {
+	display:none;
+}
+.mobilePhone {
+	display:none;
+}
+table #pageName .mobilePhone a {
+	display: block;
+	width: initial;
+	margin: 0;
+	height: initial;
+}
+	#navBar {
+		left: 0;
+		width: 20%;
+		top: 0;
+		position: fixed;
+		height: 100%;
+		transition:all .3s;
+		-webkit-transition:all .3s;
+	}
+	body {
+	    padding-left: 20%;
+	     min-width: initial;
+		     overflow: scroll;
+	}
+	#globalNav {
+		display:none;
+	}
+	.globalNav_clone {
+		color:transparent;
+		display:block;
+	}
+	.globalNav_clone > * {
+		display:none;
+	} 
+	.globalNav_clone a {
+		display: inline-block!important;
+		width: 90%;
+		padding-left: 10px;
+		padding-top: 4px;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #cccccc;
+	}
+	#content {
+		float: none;
+		width: 100%;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+
+	.feature a img {
+		float: left;
+		clear: both;
+		display: inline-block;
+		height: initial;
+	
+	}
+	#masthead table  tr td:nth-child(1){
+		min-width: 151px;
+		display:none;
+	}
+	table #pageName a  {    
+		display: inline-block;
+		width: 214px;
+		overflow: hidden;
+		margin-top: 15px;
+	}
+	table #pageName {
+	    padding: 0px 214px 0px 10px;
+	}
+	table #pageName .mobilePhone {
+		display: inline-block;
+		width: 157px;
+		margin-right: -214px;
+		margin-top: -44px;
+		float: right;
+	}
+	body #headlines {
+		margin: 0 10px;
+		width: 30%;
+	}	
+	#sectionLinks a {
+		padding: 4px 0px 2px 17px;
+		font-size: 16px;
+	}
+	blockquote {
+		margin: 10px 0;
+	}
+	#navBar {
+		width: 205px;
+		z-index: 99;
+		overflow-y: scroll;
+		
+	}
+	#navBar:not(.open) {
+		left: -205px;
+		top: 0;
+		position: fixed;
+		min-height: 100%;
+	}
+	body {
+		padding-left: 0;
+	}
+	#navBar.open {
+		left:0;
+		box-shadow: 1px 0px 60px, inset 0 0 9px #D6D6D6;
+	}
+	.mobile_menu {
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: url(images/menu_2x.png) center center no-repeat ,rgb(94, 155, 186);
+		background-size: 32px;
+		position: fixed;
+		top: 3px;
+		z-index: 999;
+		transition: all .3s;
+		border-radius: 5px;
+		box-shadow: 0 0 3px;
+		cursor: pointer;
+	}
+	.mobile_menu:not(.open) {
+		left: 4px;
+	}
+	.mobile_menu.open {
+		left:209px;
+	}
+	.mobile_shirma {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		background: rgba(128, 128, 128, 0.53);
+		transition:all .3s;
+		-webkit-transition:all .3s;
+	}
+	.mobile_shirma.open {
+		display:block;
+	}
+	.mobile_shirma:not(.open) {
+		display:none;
+	}
+	table #pageName a {
+		    margin-left: -48px;
+	}
+	table #pageName {
+		padding: 0px 214px 0px 55px;
+	}
+	body #headlines {
+		display:none;
+	}
+}
+@media only screen and (max-width: 570px),only screen and (max-device-width: 570px) {
+#content table {
+    display: block;
+    overflow-x: scroll;
+}
+#content img {
+    max-width: 100%;
+}
+#content table th {
+	display:block;
+}
+.feature  h3 img {
+    width: 100%;
+    height: initial;
+}
+	.feature h3 img {
+	    float: right;
+	}
+table #pageName {
+    padding: 0px 0 3px 55px;
+}
+
+table #pageName .mobilePhone  {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 23px;
+    float: right;
+}
+table #pageName a {
+    display: inline-block;
+    width: 193px;
+    overflow: hidden;
+    margin-top: 28px;
+}
+}
+@media only screen and (max-width: 370px),only screen and (max-device-width: 370px) {
+table #pageName .mobilePhone {
+    float: none;
+	margin-left: -45px;
+	}
+	table #pageName a {
+		display: inline-block;
+		width: 254px;
+		height: 58px;
+		overflow: hidden;
+		margin-top: 28px;
+	}
+	table #pageName a img {
+	    width: initial;
+		height: 100%;
+	}
+}

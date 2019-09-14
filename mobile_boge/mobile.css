@@ -1,0 +1,17 @@
+@charset "utf-8";
+div {
+	font-size: 80px;
+}
+.gridContainer.clearfix p {
+	font-size: 80%;
+}
+.gridContainer.clearfix p {
+	font-size: 80px;
+}
+.gridContainer.clearfix p {
+	font-size: 12px;
+}
+.gridContainer.clearfix table {
+	font-size: 14px;
+
+}

@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "Helvetica Neue LT W02_47 Lt Cn";
+    src: url(../fonts/9e301685-0d1c-4f8f-a7a0-9e45bba3206d.eot?#iefix);
+    src: url(../fonts/9e301685-0d1c-4f8f-a7a0-9e45bba3206d.eot?#iefix) format("eot"),
+    url(../fonts/7e8b52c8-d000-4dd4-b784-8c3b23f9f701.woff2) format("woff2"),\
+    url(../fonts/5b1f151d-563c-46cb-8f89-83e51d888b79.woff) format("woff"),
+    url(../fonts/4fb565eb-d22a-4407-811a-bc35e396e231.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT W02_57 Cond";
+    src: url(../fonts/a03a5856-83a3-4c2b-b249-6fd1fd950470.eot?#iefix);
+    src: url(../fonts/a03a5856-83a3-4c2b-b249-6fd1fd950470.eot?#iefix) format("eot"),
+    url(../fonts/09e8b7ae-235d-4a73-a474-74e490ec7d8c.woff2) format("woff2"),
+    url(../fonts/c3714398-3eb2-4367-b59c-71b47b320d05.woff) format("woff"),
+    url(../fonts/0a4761a0-1f5b-42a5-90fc-4c4c0bd60066.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT W02_77 Bd Cn";
+    src: url(../fonts/275b0a86-302d-46d0-a716-3f2d5c8067dc.eot?#iefix);
+    src: url(../fonts/275b0a86-302d-46d0-a716-3f2d5c8067dc.eot?#iefix) format("eot"),
+    url(../fonts/2c53df98-e761-4e85-bee6-ef9c8e6d058c.woff2) format("woff2"),
+    url(../fonts/77fcaa33-871e-4060-b904-5f3604201510.woff) format("woff"),
+    url(../fonts/14845e24-db5b-4ce5-a16b-6c9f9cc929d8.ttf) format("truetype")
+}
