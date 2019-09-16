@@ -5,4 +5,6 @@
 	$pass = '';
 	$db_name = 'boge';
 
+	$domain = 'localhost';
+
 ?>

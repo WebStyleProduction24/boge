@@ -7,6 +7,7 @@
 		if ($_SESSION['sess_login']===$enter_login && $_SESSION['sess_pass']===$enter_passw) {
 			echo "<h1>Добро пожаловать в панель управления!</h1>\n";
 			echo "<p><a href='exit.php'>Выйти из системы</a></p>\n";
+			echo "<p><a href='/' target='_blank'>Перейти к сайту</a></p>\n";
 
 			require_once ('office.php');
 

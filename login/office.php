@@ -1,5 +1,6 @@
 <?php
 require_once('config.php');
+require_once('functions.php');
 
 	if (@$link = mysqli_connect($host, $user, $pass, $db_name)) { //Проверяем подключение к базе данных
 
@@ -11,7 +12,7 @@ require_once('config.php');
 
 		<p>Продуктов в базе: <?php echo $answer; ?></p>
 
-		<p><a href="database.php">Управлять базой данных</a></p>
+		<?php operate_DB(); ?>
 
 
 		<!-- Проверяем имеются ли записи в БД -->
@@ -25,7 +26,7 @@ require_once('config.php');
 							<th scope="col">ID</th>
 							<th scope="col">Наименование</th>
 							<th scope="col">URL</th>
-							<th scope="col"></th>
+							<th scope="col">Изображение</th>
 						</tr>
 					</thead>
 
@@ -36,19 +37,20 @@ require_once('config.php');
 							<th scope="row"><?php echo $row['id']; ?></td>
 							<td><?php echo $row['name']; ?></td>
 							<td>
-								<a href="http://boge.ru/<?php echo $row['url']; ?>.html">
-									http://boge.ru/<?php echo $row['url']; ?>.html
-								</a>
+								<a href="<?php url_DB(); ?>"><?php url_DB(); ?></a>
 							</td>
-							<td><a href="<?php "?del={$row['id']}" ?>">Удалить</a></td>
+							<td>
+								<a href="<?php src_img_DB(); ?>"><?php src_img_DB(); ?></a>
+							</td>
 						</tr>
 					<?php } ?>
 
 				</table>
 
-				<p><a href="database.php">Управлять базой данных</a></p>
 
 				<?php	
+				operate_DB();
+
 				mysqli_free_result($res);
 			} 	
 				mysqli_close($link);
