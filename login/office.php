@@ -27,6 +27,17 @@ require_once('functions.php');
 							<th scope="col">Наименование</th>
 							<th scope="col">URL</th>
 							<th scope="col">Изображение</th>
+							<th scope="col">Категория</th>
+							<th scope="col">Тип компрессора</th>
+							<th scope="col">Тип по маслу</th>
+							<th scope="col">Мощность двигателя (кВт)</th>
+							<th scope="col">Производительность (м<sup>3</sup>/мин)</th>
+							<th scope="col">Давление</th>
+							<th scope="col">Градирня</th>
+							<th scope="col">Звуковая изоляция</th>
+							<th scope="col">Регулирование</th>
+							<th scope="col">Охлаждение</th>
+							<th scope="col">Другие параметры</th>
 						</tr>
 					</thead>
 
@@ -42,6 +53,17 @@ require_once('functions.php');
 							<td>
 								<a href="<?php src_img_DB(); ?>"><?php src_img_DB(); ?></a>
 							</td>
+							<td><?php echo $row['category'] ?></td>
+							<td><?php echo $row['type_compressor'] ?></td>
+							<td><?php echo $row['type_oil'] ?></td>
+							<td><?php echo $row['engine_capacity'] ?></td>
+							<td><?php echo $row['performance'] ?></td>
+							<td><?php echo $row['pressure'] ?></td>
+							<td><?php echo $row['heat_recovery'] ?></td>
+							<td><?php echo $row['sound_isolation'] ?></td>
+							<td><?php echo $row['regulation'] ?></td>
+							<td><?php echo $row['cooling'] ?></td>
+							<td><?php echo $row['other_parameters'] ?></td>
 						</tr>
 					<?php } ?>
 

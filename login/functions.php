@@ -20,5 +20,5 @@
 	//URL продукта
 	function url_DB() {
 		global $domain, $row;
-		echo "http://boge." . $domain . "/" . $row['image'] . ".html";
+		echo "http://boge." . $domain . "/" . $row['url'] . ".html";
 	}
