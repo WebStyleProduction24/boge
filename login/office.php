@@ -3,10 +3,10 @@ require_once('config.php');
 require_once('functions.php');
 
 	if (@$link = mysqli_connect($host, $user, $pass, $db_name)) { //Проверяем подключение к базе данных
+		mysqli_query($link, 'SET NAMES utf8');
 
 		$res = mysqli_query($link, "SELECT * FROM `products`"); //Выполняем запрос к БД
 		$answer = mysqli_num_rows( $res ); //Получаем количество записей из БД
-		mysqli_query($link, 'SET NAMES cp1251')
 
 		?>
 

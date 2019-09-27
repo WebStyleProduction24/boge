@@ -5,10 +5,7 @@ require_once('config.php');
 require_once('functions.php');
 
 $link = mysqli_connect($host, $user, $pass, $db_name);
-
-
-
-
+mysqli_query($link, "SET NAMES utf8"); //Задаем кодировку
 
 		// Ругаемся, если соединение установить не удалось
 if (!$link) {
@@ -128,7 +125,7 @@ if (isset($_GET['del'])) {
 			<td>
 				<select name="type_oil" id="">
 					<option value="Выберите необходимый пункт" selected disabled>Выберите необходимый пункт</option>
-					<option value="Маслосмазанный">Маслосмазанный</option>
+					<option value="Маслосмазываемый">Маслосмазываемый</option>
 					<option value="Безмасляный">Безмасляный</option>
 				</select>
 			</td>
