@@ -45,7 +45,7 @@ require_once('functions.php');
 					<?php while ($row = mysqli_fetch_assoc($res)) {?>
 						<!-- Выводим в цикле записи базы данных -->
 						<tr>
-							<th scope="row"><?php echo $row['id']; ?></td>
+							<th scope="row"><?php echo $row['id']; ?></th>
 							<td><?php echo $row['name']; ?></td>
 							<td>
 								<a href="<?php url_DB(); ?>"><?php url_DB(); ?></a>
