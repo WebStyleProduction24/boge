@@ -1,7 +1,7 @@
 <?php
 
 require_once('header.php');
-require_once('config.php');
+require_once('../config.php');
 require_once('functions.php');
 
 $link = mysqli_connect($host, $user, $pass, $db_name);
@@ -149,7 +149,7 @@ if (isset($_GET['del'])) {
 		<tr class="py-3">
 			<td>Градирня:</td>
 			<td>
-				<input type="checkbox" name="heat_recovery" value="Есть" />
+				<input type="checkbox" name="heat_recovery" value="Есть" /> Есть;
 			</td>
 		</tr>
 		<tr class="py-3">

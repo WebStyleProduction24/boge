@@ -17,6 +17,17 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+	<script src="search/search.js"></script>
+
+	<link href="search/search.css" rel="stylesheet"type="text/css" />
+
+
+
+
 </head>
 <body>
 	<a name="start"></a>
@@ -55,10 +66,11 @@
 									</ul>
 								</div>
 							</nav>
-							<div class="collapse float-right mr-xl-5" id="collapseExample">
+							<div class="collapse float-right mr-xl-5 position-relative" id="collapseExample">
 								<form class="form-inline my-2 my-lg-0">									
-									<input class="form-control mr-sm-2 mr-xl-5" type="search" placeholder="Поиск..." aria-label="Поиск...">
+									<input class="who form-control mr-sm-2 mr-xl-5" type="search" name="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">
 								</form>
+								<ul class="search_result"></ul>
 							</div>
 						</div>
 						<div class="col-4 d-lg-none d-xl-none px-0">
@@ -192,7 +204,7 @@
 	<!-- Тело страницы -->
 	<main>
 
-<section class="container mt-5">
+		<section class="container mt-5">
 			<h1 class="font-weight-bold mb-3 text-primary">Which product are you looking for?</h1>
 			<div class="row m-0 align-items-center bg-success text-white">
 				<div class="col-12 col-sm p-3 border-right border-white">
@@ -208,8 +220,9 @@
 				<div class="col-12 col-sm py-0 px-3 p-sm-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
 				<div class="col-12 col-sm py-0 px-3 p-sm-3">
 					<form class="form-inline my-2 my-lg-0">									
-						<input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Поиск...">						
+						<input class="who form-control mr-sm-2" type="search" name="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">						
 						<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
+						<ul class="search_result"></ul>
 					</form>
 				</div>
 			</div>
@@ -643,7 +656,7 @@
 
 		<?php
 
-			require_once('search/field-delivery.php');
+		require_once('search/field-delivery.php');
 
 		?>
 
@@ -788,11 +801,11 @@
 						</ul>
 					</div>
 				</nav>
-							<div class="collapse float-right mr-xl-5" id="collapseExample">
-								<form class="form-inline my-2 my-lg-0">									
-									<input class="form-control mr-sm-2 mr-xl-5" type="search" placeholder="Поиск..." aria-label="Поиск...">
-								</form>
-							</div>
+				<div class="collapse float-right mr-xl-5" id="collapseExample">
+					<form class="form-inline my-2 my-lg-0">									
+						<input class="form-control mr-sm-2 mr-xl-5" type="search" placeholder="Поиск..." aria-label="Поиск...">
+					</form>
+				</div>
 				<div class="row">
 					<div class="col-12 col-lg">
 						<p class="text-white mb-0">Скачайте брошюры BOGE для наилучшего информирования:</p>
@@ -846,20 +859,19 @@
 			<a href="mailto:info@boge.ru" class="title font-weight-bold"><i class="far fa-envelope"></i> info@boge.ru</a>
 			<div class="link-section">
 				<a href="tel:+78005008945" class="text-success"><i class="fas fa-phone text-success"></i> 8 (800) 500-89-45
-</a>
+				</a>
 			</div>
 		</div>
 	</div>
 	<!-- Конец Лейбла с контактными данными -->
 
-		<!-- Прокрутка в начало страницы -->
+	<!-- Прокрутка в начало страницы -->
 	<div class="position-fixed border cursor-pointer d-none d-lg-block" id="top-scroller" onclick="javascript: window.scrollTo(0,0);">To Top</div>
 	<!-- Конец прокрутки в начало страницы -->
 
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/up-scroll.js"></script>
@@ -870,11 +882,11 @@
 <!-- Yandex.Metrika counter -->
 <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
 <script type="text/javascript">
-try { var yaCounter23799529 = new Ya.Metrika({id:23799529,
-          webvisor:true,
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true});
+	try { var yaCounter23799529 = new Ya.Metrika({id:23799529,
+		webvisor:true,
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true});
 } catch(e) { }
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/23799529" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

@@ -1,5 +1,5 @@
 <?php
-require_once('config.php');
+require_once('../config.php');
 require_once('functions.php');
 
 	if (@$link = mysqli_connect($host, $user, $pass, $db_name)) { //Проверяем подключение к базе данных
