@@ -1,0 +1,39 @@
+@charset "UTF-8"; 
+
+[id^="slider-range-"]{
+	width: 100%;
+	border-radius: 5.6px;
+}
+[id^="amount-"] {
+	border: 0;
+}
+[id^="slider-range-"] span {
+	border-radius: 50%;
+	top: -.45em;
+	width: 1.5em;
+	height: 1.5em;
+	background-color: #007bff;
+}
+[id^="slider-range-"]::before, [id^="slider-range-"]::after {
+	color: #28a745;
+	top: 15px;
+	position: absolute;
+}
+#slider-range-performance::before {
+	content: '0.08 м\00B3/мин'
+}
+#slider-range-power::before {
+	content: '0.65 кВт'
+}
+[id^="slider-range-"]::after {
+	right: 0;	
+}
+#slider-range-performance::after {
+	content: '50.30 м\00B3/мин'
+}
+#slider-range-power::after {
+	content: '355.00 кВт';
+}
+#amount-performance {
+	width: 200px;
+}

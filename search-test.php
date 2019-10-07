@@ -21,13 +21,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 
-	<script src="search/search.js"></script>
-
-	<link href="search/search.css" rel="stylesheet"type="text/css" />
-
-
-
-
 </head>
 <body>
 	<a name="start"></a>
@@ -299,11 +292,11 @@
 						</form>
 					</div>
 					<div class="bg-white border border-success col-12 collapse" id="collapseExample2" data-parent="#accordionExample">
-						
+		
 
 						<form action="">
 							<div class="form-group m-3">
-								<div class="row border-bottom pb-3">
+								<div class="row border-bottom pb-3" id="radio_control">
 									<div class="col-4 custom-control custom-radio">
 										<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios1" value="option1" checked="checked">
 										<label class="custom-control-label" for="modeRadios1">Мощность двигателя (кВт)</label>
@@ -316,17 +309,15 @@
 
 
 								</div>
+								<style>
+									#control > div{
+										display: none;
+									}
+								</style>
 
 								<div class="row">
-									
-									<label for="customRange3">Выберите по шкале</label>
-									<input type="range" class="custom-range" min="2" max="355" step="1" id="customRange3">
-									<div id="slider-range"></div>
-
-									<input class="form-control" name="price" id="price">
-									<div id="slider-range"></div>
-
-								</div>
+								<?php  require_once('search/modules/range-control.php'); ?>
+							</div>
 							</div>
 						</form>
 					</div>
