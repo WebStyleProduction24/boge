@@ -34,6 +34,9 @@
 #slider-range-power::after {
 	content: '355.00 кВт';
 }
-#amount-performance {
-	width: 200px;
+[id^="amount-power-"] {
+	width: 43px;
+}
+[id^="amount-performance-"] {
+	width: 35px;
 }

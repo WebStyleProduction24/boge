@@ -11,11 +11,12 @@
 			values: [ 110, 250 ],
 			slide: function( event, ui ) {
         // $( "#amount" ).val( ui.values[ 0.00 ] + " - " + ui.values[ 1.00 ] );
-        $( "#amount-power" ).val( ui.values[ 0 ].toFixed(2) + ' кВт - ' + ui.values[ 1 ].toFixed(2) + ' кВт' );
+        $( "#amount-power-st" ).val( ui.values[ 0 ].toFixed(2) );
+        $( "#amount-power-en" ).val( ui.values[ 1 ].toFixed(2) );
       }
     });
-		$( "#amount-power" ).val( $( "#slider-range-power" ).slider( "values", 0 ).toFixed(2) +
-			' кВт - ' + $( "#slider-range-power" ).slider( "values", 1 ).toFixed(2) + ' кВт' );
+		$( "#amount-power-st" ).val( $( "#slider-range-power" ).slider( "values", 0 ).toFixed(2) );
+		$( "#amount-power-en" ).val( $( "#slider-range-power" ).slider( "values", 1 ).toFixed(2) );
 
 		$( "#slider-range-performance" ).slider({
 			range: true,
@@ -25,11 +26,12 @@
 			values: [ 15, 35 ],
 			slide: function( event, ui ) {
         // $( "#amount" ).val( ui.values[ 0.00 ] + " - " + ui.values[ 1.00 ] );
-        $( "#amount-performance" ).val( ui.values[ 0 ].toFixed(2) + " м\u00B3/мин - " + ui.values[ 1 ].toFixed(2) + " м\u00B3/мин" );
+        $( "#amount-performance-st" ).val( ui.values[ 0 ].toFixed(2) );
+        $( "#amount-performance-en" ).val( ui.values[ 1 ].toFixed(2) );
       }
     });
-		$( "#amount-performance" ).val( $( "#slider-range-performance" ).slider( "values", 0 ).toFixed(2) +
-					" м\u00B3/мин - " + $( "#slider-range-performance" ).slider( "values", 1 ).toFixed(2) + " м\u00B3/мин" );
+		$( "#amount-performance-st" ).val( $( "#slider-range-performance" ).slider( "values", 0 ).toFixed(2) );
+		$( "#amount-performance-en" ).val( $( "#slider-range-performance" ).slider( "values", 1 ).toFixed(2) );
 	} );
 </script>
 
@@ -37,7 +39,9 @@
 	<div id="option1" style="display: block">
 		<p>
 			<label for="amount">Выберите мощность по шкале:</label>
-			<input class="text-success" type="text" id="amount-power" readonly />
+			<span class="text-success">
+				<input class="text-success" name="engine_capacity_st" value="" type="text" id="amount-power-st" readonly /> кВт - <input class="text-success" name="engine_capacity_en" value="" type="text" id="amount-power-en" readonly /> кВт
+			</span>
 		</p>
 
 		<div id="slider-range-power" class="mb-3"></div>
@@ -47,7 +51,9 @@
 	<div id="option2">
 		<p>
 			<label for="amount-performance">Выберите производительность по шкале:</label>
-			<input class="text-success" type="text" id="amount-performance" readonly />
+			<span class="text-success">
+				<input class="text-success" name="performance_st" value="" type="text" id="amount-performance-st" readonly /> м<sup>3</sup>/мин - <input class="text-success" name="performance_en" value="" type="text" id="amount-performance-en" readonly /> м<sup>3</sup>/мин
+			</span>
 		</p>
 
 		<div id="slider-range-performance" class="mb-3"></div>
