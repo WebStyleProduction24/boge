@@ -200,8 +200,9 @@
 		<section class="container mt-5">
 			<h1 class="font-weight-bold mb-3 text-primary">Which product are you looking for?</h1>
 			<div class="row m-0 align-items-center bg-success text-white">
-				<div class="col-12 col-sm p-3 border-right border-white">
-					<select class="form-control-sm text-success border-success col">
+				<div  class="col-12 col-sm p-3 border-right border-white">
+<!--		добавление id в select			-->
+					<select name="category" id="category" class="form-control-sm text-success border-success col">
 						<option value="All" selected="">Выберите категорию</option>
 						<option value="Compressors">Компрессоры</option>
 						<option value="Compressed_Air_Treatment">Воздухоподготовка</option>
@@ -258,34 +259,34 @@
 							<div class="form-group m-3">
 								<div class="row border-bottom pb-3">
 									<div class="col-4 custom-control custom-radio">
-										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios1" value="option1" checked="checked">
-										<label class="custom-control-label" for="typeRadios1">- Все -</label>
+										<input type="radio" class="custom-control-input" name="type_compressor[]" id="type_compressor_1" value="all" checked="checked">
+										<label class="custom-control-label" for="type_compressor_1">- Все -</label>
 									</div>
 									<div class="col-4 custom-control custom-radio">
-										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios2" value="option2">
-										<label class="custom-control-label" for="typeRadios2">Винтовой компрессор</label>
+										<input type="radio" class="custom-control-input" name="type_compressor[]" id="type_compressor_2" value="Винтовой компрессор">
+										<label class="custom-control-label" for="type_compressor_2">Винтовой компрессор</label>
 									</div>
 									<div class="col-4 custom-control custom-radio">
-										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios3" value="option3">
-										<label class="custom-control-label" for="typeRadios3">Поршневой компрессор</label>
+										<input type="radio" class="custom-control-input" name="type_compressor[]" id="type_compressor_3" value="Поршневой компрессор">
+										<label class="custom-control-label" for="type_compressor_3">Поршневой компрессор</label>
 									</div>
 									<div class="col-4 custom-control custom-radio">
-										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios4" value="option4">
-										<label class="custom-control-label" for="typeRadios4">Спиральный компрессор</label>
+										<input type="radio" class="custom-control-input" name="type_compressor[]" id="type_compressor_4" value="Спиральный компрессор">
+										<label class="custom-control-label" for="type_compressor_4">Спиральный компрессор</label>
 									</div>
 								</div>
 								<div class="row pt-3">
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheck1">
-										<label class="custom-control-label" for="customCheck1">- Все - </label>
+										<input type="checkbox" class="custom-control-input" id="type_oil_1" name="type_oil[]" value="all">
+										<label class="custom-control-label" for="type_oil_1">- Все - </label>
 									</div>
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheck2">
-										<label class="custom-control-label" for="customCheck2">Маслосмазываемый</label>
+										<input type="checkbox" class="custom-control-input" id="type_oil_2" name="type_oil[]" value="Маслосмазываемый">
+										<label class="custom-control-label" for="type_oil_2">Маслосмазываемый</label>
 									</div>
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheck3">
-										<label class="custom-control-label" for="customCheck3">Безмаслянный</label>
+										<input type="checkbox" class="custom-control-input" id="type_oil_3" name="type_oil[]" value="Безмасляный">
+										<label class="custom-control-label" for="type_oil_3">Безмаслянный</label>
 									</div>
 								</div>
 							</div>
@@ -326,16 +327,16 @@
 							<div class="form-group m-3">
 								<div class="row">
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="PressureRange1">
-										<label class="custom-control-label" for="PressureRange1">Низкое (до 10 атм)</label>
+										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Низкое (до 10 атм)" id="pressure_1">
+										<label class="custom-control-label" for="pressure_1">Низкое (до 10 атм)</label>
 									</div>
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="PressureRange2">
-										<label class="custom-control-label" for="PressureRange2">Среднее (до 15 атм)</label>
+										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Среднее (до 15 атм)" id="pressure_2">
+										<label class="custom-control-label" for="pressure_2">Среднее (до 15 атм)</label>
 									</div>
 									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="PressureRange3">
-										<label class="custom-control-label" for="PressureRange3">Высокое (до 40 атм)</label>
+										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Высокое (до 40 атм)" id="pressure_3">
+										<label class="custom-control-label" for="pressure_3">Высокое (до 40 атм)</label>
 									</div>
 								</div>
 							</div>
@@ -349,8 +350,8 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentHeatRecovery">
-												<label class="custom-control-label" for="EquipmentHeatRecovery">Да</label>
+												<input type="checkbox" class="custom-control-input" name="heat_recovery" id="heat_recovery" value="Да">
+												<label class="custom-control-label" for="heat_recovery">Да</label>
 											</div>
 										</div>
 									</div>
@@ -360,20 +361,20 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption1">
-												<label class="custom-control-label" for="EquipmentSoundAbsorption1">Нет</label>
+												<input type="checkbox" class="custom-control-input" name="sound_isolation[]" value="Нет" id="sound_isolation_0">
+												<label class="custom-control-label" for="sound_isolation_0">Нет</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption2">
-												<label class="custom-control-label" for="EquipmentSoundAbsorption2">Стандартная</label>
+												<input type="checkbox" class="custom-control-input" name="sound_isolation[]" value="Стандартная" id="sound_isolation_1">
+												<label class="custom-control-label" for="sound_isolation_1">Стандартная</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
-												<label class="custom-control-label" for="EquipmentSoundAbsorption3">Усиленная</label>
+												<input type="checkbox" class="custom-control-input" name="sound_isolation[]" value="Усиленная" id="sound_isolation_2">
+												<label class="custom-control-label" for="sound_isolation_2">Усиленная</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
-												<label class="custom-control-label" for="EquipmentSoundAbsorption3">Усиленная (опционально)</label>
+												<input type="checkbox" class="custom-control-input" name="sound_isolation[]" value="Усиленная (опционально)" id="sound_isolation_3">
+												<label class="custom-control-label" for="sound_isolation_3">Усиленная (опционально)</label>
 											</div>
 										</div>
 									</div>
@@ -383,16 +384,16 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl1">
-												<label class="custom-control-label" for="EquipmentDeliveryControl1">Частотное</label>
+												<input type="checkbox" class="custom-control-input" id="regulation_1" name="regulation[]" value="Частотное">
+												<label class="custom-control-label" for="regulation_1">Частотное</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl2">
-												<label class="custom-control-label" for="EquipmentDeliveryControl2">Водяное охлаждение</label>
+												<input type="checkbox" class="custom-control-input" id="regulation_2" name="regulation[]" value="Водяное охлаждение">
+												<label class="custom-control-label" for="regulation_2">Водяное охлаждение</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl3">
-												<label class="custom-control-label" for="EquipmentDeliveryControl3">Фиксированная скорость</label>
+												<input type="checkbox" class="custom-control-input" id="regulation_3" name="regulation[]" value="Фиксированная скорость">
+												<label class="custom-control-label" for="regulation_3">Фиксированная скорость</label>
 											</div>
 										</div>
 									</div>
@@ -402,12 +403,12 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentCooling1">
-												<label class="custom-control-label" for="EquipmentCooling1">Воздушное</label>
+												<input type="checkbox" class="custom-control-input" id="cooling_1" name="cooling[]" value="Воздушное">
+												<label class="custom-control-label" for="cooling_1">Воздушное</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentCooling2">
-												<label class="custom-control-label" for="EquipmentCooling2">Водяное</label>
+												<input type="checkbox" class="custom-control-input" id="cooling_2" name="cooling[]" value="Водяное">
+												<label class="custom-control-label" for="cooling_2">Водяное</label>
 											</div>
 										</div>
 									</div>
@@ -417,16 +418,16 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties1">
-												<label class="custom-control-label" for="EquipmentOtherProperties1">Клиноременный</label>
+												<input type="checkbox" class="custom-control-input" id="other_parameters_1" name="other_parameters[]" value="Клиноременный">
+												<label class="custom-control-label" for="other_parameters_1">Клиноременный</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties2">
-												<label class="custom-control-label" for="EquipmentOtherProperties2">Компрессорный центр</label>
+												<input type="checkbox" class="custom-control-input" id="other_parameters_2" name="other_parameters[]" value="Компрессорный центр">
+												<label class="custom-control-label" for="other_parameters_2">Компрессорный центр</label>
 											</div>
 											<div class="col-4 custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties3">
-												<label class="custom-control-label" for="EquipmentOtherProperties3">Маслосмазываемый</label>
+												<input type="checkbox" class="custom-control-input" id="other_parameters_3" name="other_parameters[]" value="Маслосмазываемый">
+												<label class="custom-control-label" for="other_parameters_3">Маслосмазываемый</label>
 											</div>
 										</div>
 									</div>
@@ -869,6 +870,9 @@
 	<script type="text/javascript" src="js/images-show.js"></script>
 
 </body>
+<!--подключенный скрипт продукции-->
+<script src="js/main-product.js"></script>
+
 
 <!-- Yandex.Metrika counter -->
 <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
