@@ -19,6 +19,8 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--подключенный скрипт продукции-->
+<script src="search/main-product.js"></script>
 
 
 </head>
@@ -199,6 +201,8 @@
 
 		<section class="container mt-5">
 			<h1 class="font-weight-bold mb-3 text-primary">Which product are you looking for?</h1>
+
+	<form action="" >
 			<div class="row m-0 align-items-center bg-success text-white">
 				<div  class="col-12 col-sm p-3 border-right border-white">
 <!--		добавление id в select			-->
@@ -642,6 +646,7 @@
 					</form>
 				</div>
 			</div>
+		</form>
 		</section>
 		
 
@@ -651,6 +656,27 @@
 		require_once('search/field-delivery.php');
 
 		?>
+
+		<section>
+			<form action="" onchange= "getdetails()" id="formsearch">
+				
+		<p>
+			<select name="category" id="category">
+				<option value="All" selected="">Выберите категорию</option>
+				<option value="Компрессоры">Компрессоры</option>
+				<option value="Воздухоподготовка">Воздухоподготовка</option>
+				<option value="Специальные газы">Специальные газы</option>
+				<option value="Системы управления">Системы управления</option>
+				<option value="Запчасти">Запчасти</option>
+			</select>
+		</p>
+
+
+
+
+			</form>
+			<div id="msg"></div>
+		</section>
 
 
 
@@ -870,8 +896,6 @@
 	<script type="text/javascript" src="js/images-show.js"></script>
 
 </body>
-<!--подключенный скрипт продукции-->
-<script src="js/main-product.js"></script>
 
 
 <!-- Yandex.Metrika counter -->

@@ -1,6 +1,8 @@
-$('form').change(getdetails());
+$('#formsearch').change(getdetails());
 $( "#slider-range-power" ).on( "slidechange", function( event, ui ) { getdetails() } );
 $( "#slider-range-performance" ).on( "slidechange", function( event, ui ) { getdetails() } );
+
+alert('test');
 
 
 function getdetails(){
@@ -66,7 +68,7 @@ function getdetails(){
 
 	$.ajax({
 		type: "POST",
-		url: "show.php",
+		url: "search/show.php",
 		data: {
 			cat: category,
 			type_compressor: type_compressor,
