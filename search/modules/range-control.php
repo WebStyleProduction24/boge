@@ -8,7 +8,7 @@
 			min: 0.65,
 			max: 355,
 			step: 0.01,
-			values: [ 110, 250 ],
+			values: [ 0.65, 355 ],
 			slide: function( event, ui ) {
         // $( "#amount" ).val( ui.values[ 0.00 ] + " - " + ui.values[ 1.00 ] );
         $( "#amount-power-st" ).val( ui.values[ 0 ].toFixed(2) );
@@ -23,7 +23,7 @@
 			min: 0.08,
 			max: 50.30,
 			step: 0.01,
-			values: [ 15, 35 ],
+			values: [ 0.08, 50.30 ],
 			slide: function( event, ui ) {
         // $( "#amount" ).val( ui.values[ 0.00 ] + " - " + ui.values[ 1.00 ] );
         $( "#amount-performance-st" ).val( ui.values[ 0 ].toFixed(2) );
