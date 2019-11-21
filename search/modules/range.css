@@ -1,5 +1,8 @@
 @charset "UTF-8"; 
 
+#control > div{
+	display: none;
+}
 [id^="slider-range-"]{
 	width: 100%;
 	border-radius: 5.6px;

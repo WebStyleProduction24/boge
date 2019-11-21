@@ -305,19 +305,10 @@
 										<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios2" value="option2">
 										<label class="custom-control-label" for="modeRadios2">Производительность м<sup>3</sup>/мин</label>
 									</div>
-
-
-
 								</div>
-								<style>
-									#control > div{
-										display: none;
-									}
-								</style>
-
 								<div class="row">
-								<?php  require_once('search/modules/range-control.php'); ?>
-							</div>
+									<?php  require_once('search/modules/range-control.php'); ?>
+								</div>
 							</div>
 						</form>
 					</div>
