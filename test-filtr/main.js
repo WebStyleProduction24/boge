@@ -1,10 +1,12 @@
-$('form#formsearch').change(getdetails());
+$('form').change(getdetails());
 $( "#slider-range-power" ).on( "slidechange", function( event, ui ) { getdetails() } );
 $( "#slider-range-performance" ).on( "slidechange", function( event, ui ) { getdetails() } );
 
 
-
 function getdetails(){
+
+	// alert('test');
+
 
 	var category = $('#category').val(),
 			type_compressor = $('input[name="type_compressor[]"]:checked').val(),
@@ -64,7 +66,7 @@ function getdetails(){
 
 	$.ajax({
 		type: "POST",
-		url: "search/show.php",
+		url: "show.php",
 		data: {
 			cat: category,
 			type_compressor: type_compressor,

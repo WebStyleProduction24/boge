@@ -1,11 +1,9 @@
 <?php
 
-require_once('functions.php');
-
-$hostname = "localhost"; // название/путь сервера, с MySQL
-$username = "root"; // имя пользователя (в Denwer`е по умолчанию "root")
-$password = ""; // пароль пользователя (в Denwer`е по умолчанию пароль отсутствует, этот параметр можно оставить пустым)
-$dbName = "boge"; // название базы данных
+$hostname = "boge.mysql:3306"; // название/путь сервера, с MySQL
+$username = "boge_mysql"; // имя пользователя (в Denwer`е по умолчанию "root")
+$password = "uEhFQN8+"; // пароль пользователя (в Denwer`е по умолчанию пароль отсутствует, этот параметр можно оставить пустым)
+$dbName = "boge_admin_db"; // название базы данных
 
 
 /* Создаем соединение */
@@ -17,6 +15,7 @@ $res = mysqli_query($link, "SELECT * FROM `products`");
 $cat = $_POST['cat'];
 $type_compressor = $_POST['type_compressor'];
 $type_oil = $_POST['type_oil'];
+
 
 $engine_capacity_st = $_POST['engine_capacity_st'];
 $engine_capacity_en = $_POST['engine_capacity_en'];
@@ -34,6 +33,25 @@ $row = mysqli_fetch_assoc($res);
 $engine_capacity =$row['engine_capacity'];
 $performance =$row['performance'];
 
+echo "<table>";
+echo "<thead>
+<tr>
+<th>№</th>
+<th>ID</th>
+<th>Наименование</th>
+<th>Категория</th>
+<th>Тип компрессора</th>
+<th>Тип по маслу</th>
+<th>Мощность двигателя (кВт)</th>
+<th>Производительность (м<sup>3</sup>/мин)</th>
+<th>Давление</th>
+<th>Градирня</th>
+<th>Звуковая изоляция</th>
+<th>Регулирование</th>
+<th>Охлаждение</th>
+<th>Другие параметры</th>
+</tr>
+</thead>";
 
 function addWhere($where, $add, $and = true) {
 	if ($where) {
@@ -84,25 +102,29 @@ if ($where) $sql .= " WHERE $where";
 
 $res = mysqli_query($link, $sql);
 
-$i=0;
+$i=1;
 
 while ($row = mysqli_fetch_assoc($res)) {
-	$i++;
-	?>
-
-	<div class="col-12 col-sm-4 col-lg-3 mb-4">
-		<a href="<?php url_DB(); ?>"><img src="<?php src_img_DB(); ?>" alt="<?php echo $row['name']; ?>" class="border bg-light w-100"></a>
-		<a href="<?php url_DB(); ?>"><h6 class="pt-3 font-weight-bold text-body"><?php echo $row['name']; ?></h6></a>
-	</div>
-	<?php 
+	echo "<tr>";
+	echo "<th>" . $i++ . "</th>";
+	echo "<td>" . $row['id'] . "</td>";
+	echo "<td>" . $row['name'] . "</td>";
+	echo "<td>" . $row['category'] . "</td>";
+	echo "<td>" . $row['type_compressor'] . "</td>";
+	echo "<td>" . $row['type_oil'] . "</td>";
+	echo "<td>" . $row['engine_capacity'] . "</td>";
+	echo "<td>" . $row['performance'] . "</td>";
+	echo "<td>" . $row['pressure'] . "</td>";
+	echo "<td>" . $row['heat_recovery'] . "</td>";
+	echo "<td>" . $row['sound_isolation'] . "</td>";
+	echo "<td>" . $row['regulation'] . "</td>";
+	echo "<td>" . $row['cooling'] . "</td>";
+	echo "<td>" . $row['other_parameters'] . "</td>";
+	echo "</tr>";
 
 }
 
-if ( $i==0 ) { ?>
+echo "</table>"
 
-<div class="col-12"><strong>По Вашим параметрам ничего не найдено!</strong></div>
-
-<?php
-}
 
 ?>

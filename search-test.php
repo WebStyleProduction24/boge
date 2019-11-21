@@ -19,8 +19,6 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--подключенный скрипт продукции-->
-<script src="search/main-product.js"></script>
 
 
 </head>
@@ -202,64 +200,67 @@
 		<section class="container mt-5">
 			<h1 class="font-weight-bold mb-3 text-primary">Which product are you looking for?</h1>
 
-	<form action="" >
-			<div class="row m-0 align-items-center bg-success text-white">
-				<div  class="col-12 col-sm p-3 border-right border-white">
-<!--		добавление id в select			-->
-					<select name="category" id="category" class="form-control-sm text-success border-success col">
-						<option value="All" selected="">Выберите категорию</option>
-						<option value="Compressors">Компрессоры</option>
-						<option value="Compressed_Air_Treatment">Воздухоподготовка</option>
-						<option value="Special_Gases">Специальные газы</option>
-						<option value="Controls">Системы управления</option>
-						<option value="Spare_Parts">Запчасти</option>
-					</select>
-				</div>
-				<div class="col-12 col-sm py-0 px-3 p-sm-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
-				<div class="col-12 col-sm py-0 px-3 p-sm-3">
-					<form class="form-inline my-2 my-lg-0">									
-						<input class="who form-control mr-sm-2" type="search" name="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">						
-						<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
-						<ul class="search_result"></ul>
+			
+				<div class="row m-0 align-items-center bg-success text-white">
+					<div  class="col-12 col-sm p-3 border-right border-white">
+						<form action="" onchange= "getdetails()" id="cat">
+						<!--		добавление id в select			-->
+						<select name="category" id="category" class="form-control-sm text-success border-success col">
+							<option value="All" selected="">Выберите категорию</option>
+							<option value="Компрессоры">Компрессоры</option>
+							<option value="Воздухоподготовка">Воздухоподготовка</option>
+							<option value="Специальные газы">Специальные газы</option>
+							<option value="Системы управления">Системы управления</option>
+							<option value="Запчасти">Запчасти</option>
+						</select>
 					</form>
+
+					</div>
+					<div class="col-12 col-sm py-0 px-3 p-sm-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
+					<div class="col-12 col-sm py-0 px-3 p-sm-3">
+						<form class="form-inline my-2 my-lg-0">									
+							<input class="who form-control mr-sm-2" type="search" name="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">						
+							<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
+							<ul class="search_result"></ul>
+						</form>
+					</div>
 				</div>
-			</div>
-			<div class="row m-0 pt-3 bg-light d-none d-sm-flex" id="accordionExample">
-				<div class="col-3 text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample1" >
-							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-1"></i>
-							Тип
-						</button>
-					</p>
-				</div>
-				<div class="col-3 text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample2" >
-							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-2"></i>
-							Мощность
-						</button>
-					</p>
-				</div>
-				<div class="col-3 text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample3" >
-							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-3"></i>
-							Давление
-						</button>
-					</p>
-				</div>
-				<div class="col-3 text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample4" >
-							<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-4"></i>
-							Параметры
-						</button>
-					</p>
-				</div>
-				<div class="col-12 position-relative text-dark">
-					<div class="bg-white border border-success col-12 collapse" id="collapseExample1" data-parent="#accordionExample">
-						<form action="">
+			<form action="" onchange= "getdetails()" id="formsearch">
+				<div class="row m-0 pt-3 bg-light d-none d-sm-flex" id="accordionExample">
+					<div class="col-3 text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample1" >
+								<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-1"></i>
+								Тип
+							</button>
+						</p>
+					</div>
+					<div class="col-3 text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample2" >
+								<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-2"></i>
+								Мощность
+							</button>
+						</p>
+					</div>
+					<div class="col-3 text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample3" >
+								<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-3"></i>
+								Давление
+							</button>
+						</p>
+					</div>
+					<div class="col-3 text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExample4" >
+								<i class="d-none d-sm-inline-block fas fa-caret-down mr-2" id="btn-fas-4"></i>
+								Параметры
+							</button>
+						</p>
+					</div>
+					<div class="col-12 position-relative text-dark">
+						<div class="bg-white border border-success col-12 collapse" id="collapseExample1" data-parent="#accordionExample">
 							<div class="form-group m-3">
 								<div class="row border-bottom pb-3">
 									<div class="col-4 custom-control custom-radio">
@@ -294,12 +295,10 @@
 									</div>
 								</div>
 							</div>
-						</form>
-					</div>
-					<div class="bg-white border border-success col-12 collapse" id="collapseExample2" data-parent="#accordionExample">
-		
+						</div>
+						<div class="bg-white border border-success col-12 collapse" id="collapseExample2" data-parent="#accordionExample">
 
-						<form action="">
+
 							<div class="form-group m-3">
 								<div class="row border-bottom pb-3" id="radio_control">
 									<div class="col-4 custom-control custom-radio">
@@ -315,30 +314,28 @@
 									<?php  require_once('search/modules/range-control.php'); ?>
 								</div>
 							</div>
-						</form>
-					</div>
-					<div class="bg-white border border-success col-12 collapse" id="collapseExample3" data-parent="#accordionExample">
-						<form action="">
-							<div class="form-group m-3">
-								<div class="row">
-									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Низкое (до 10 атм)" id="pressure_1">
-										<label class="custom-control-label" for="pressure_1">Низкое (до 10 атм)</label>
-									</div>
-									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Среднее (до 15 атм)" id="pressure_2">
-										<label class="custom-control-label" for="pressure_2">Среднее (до 15 атм)</label>
-									</div>
-									<div class="col-4 custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" name="pressure[]" value="Высокое (до 40 атм)" id="pressure_3">
-										<label class="custom-control-label" for="pressure_3">Высокое (до 40 атм)</label>
+						</div>
+						<div class="bg-white border border-success col-12 collapse" id="collapseExample3" data-parent="#accordionExample">
+							<form action="">
+								<div class="form-group m-3">
+									<div class="row">
+										<div class="col-4 custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="pressure[]" value="Низкое (до 10 атм)" id="pressure_1">
+											<label class="custom-control-label" for="pressure_1">Низкое (до 10 атм)</label>
+										</div>
+										<div class="col-4 custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="pressure[]" value="Среднее (до 15 атм)" id="pressure_2">
+											<label class="custom-control-label" for="pressure_2">Среднее (до 15 атм)</label>
+										</div>
+										<div class="col-4 custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" name="pressure[]" value="Высокое (до 40 атм)" id="pressure_3">
+											<label class="custom-control-label" for="pressure_3">Высокое (до 40 атм)</label>
+										</div>
 									</div>
 								</div>
-							</div>
-						</form>
-					</div>
-					<div class="bg-white border border-success col-12 collapse" id="collapseExample4" data-parent="#accordionExample">
-						<form action="">
+							</form>
+						</div>
+						<div class="bg-white border border-success col-12 collapse" id="collapseExample4" data-parent="#accordionExample">
 							<div class="form-group m-3">
 								<div class="row border-bottom pb-3">
 									<div class="col-3 title"><strong>Градирня</strong></div>
@@ -428,247 +425,222 @@
 									</div>
 								</div>
 							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row m-0 pt-3 bg-light d-block d-sm-none" id="accordionExampleMobile">
+					<div class="text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-mobile-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile1">
+								<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-1"></i>
+								Type
+							</button>
+						</p>
+					</div>
+					<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile1" data-parent="#accordionExampleMobile">
+						<form action="">
+							<div class="form-group m-3">
+								<div class="border-bottom pb-3">
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios1" value="option1" checked="checked">
+										<label class="custom-control-label" for="typeRadios1">- Any -</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios2" value="option2">
+										<label class="custom-control-label" for="typeRadios2">Screw Compressor</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios3" value="option3">
+										<label class="custom-control-label" for="typeRadios3">Scroll Compressor</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios4" value="option4">
+										<label class="custom-control-label" for="typeRadios4">Piston Compressor</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios5" value="option5" disabled="disabled">
+										<label class="custom-control-label" for="typeRadios5">Turbo Compressor</label>
+									</div>
+								</div>
+								<div class="pt-3">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck1">
+										<label class="custom-control-label" for="customCheck1">- Any - </label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck2">
+										<label class="custom-control-label" for="customCheck2">oil free</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck3">
+										<label class="custom-control-label" for="customCheck3">oil lubricated</label>
+									</div>
+								</div>
+							</div>
 						</form>
 					</div>
+					<div class="text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-mobile-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile2">
+								<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-2"></i>
+								Compression mode
+							</button>
+						</p>
+					</div>
+					<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile2" data-parent="#accordionExampleMobile">
+						<form action="">
+							<div class="form-group m-3">
+								<div class="border-bottom pb-3">
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios1" value="option1" checked="checked">
+										<label class="custom-control-label" for="modeRadios1">Motor power kW</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios2" value="option2">
+										<label class="custom-control-label" for="modeRadios2">FAD m<sup>3</sup>/min</label>
+									</div>
+								</div>
+								<div class="">
 
-				</div>
-			</div>
+									<label for="customRange3">Example range</label>
+									<input type="range" class="custom-range" min="2" max="355" step="1" id="customRange3">
+									<div id="slider-range"></div>
 
-			<div class="row m-0 pt-3 bg-light d-block d-sm-none" id="accordionExampleMobile">
-				<div class="text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-mobile-1" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile1">
-							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-1"></i>
-							Type
-						</button>
-					</p>
-				</div>
-				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile1" data-parent="#accordionExampleMobile">
-					<form action="">
-						<div class="form-group m-3">
-							<div class="border-bottom pb-3">
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios1" value="option1" checked="checked">
-									<label class="custom-control-label" for="typeRadios1">- Any -</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios2" value="option2">
-									<label class="custom-control-label" for="typeRadios2">Screw Compressor</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios3" value="option3">
-									<label class="custom-control-label" for="typeRadios3">Scroll Compressor</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios4" value="option4">
-									<label class="custom-control-label" for="typeRadios4">Piston Compressor</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="typeRadios" id="typeRadios5" value="option5" disabled="disabled">
-									<label class="custom-control-label" for="typeRadios5">Turbo Compressor</label>
-								</div>
-							</div>
-							<div class="pt-3">
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="customCheck1">
-									<label class="custom-control-label" for="customCheck1">- Any - </label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="customCheck2">
-									<label class="custom-control-label" for="customCheck2">oil free</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="customCheck3">
-									<label class="custom-control-label" for="customCheck3">oil lubricated</label>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-mobile-2" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile2">
-							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-2"></i>
-							Compression mode
-						</button>
-					</p>
-				</div>
-				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile2" data-parent="#accordionExampleMobile">
-					<form action="">
-						<div class="form-group m-3">
-							<div class="border-bottom pb-3">
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios1" value="option1" checked="checked">
-									<label class="custom-control-label" for="modeRadios1">Motor power kW</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input type="radio" class="custom-control-input" name="modeRadios" id="modeRadios2" value="option2">
-									<label class="custom-control-label" for="modeRadios2">FAD m<sup>3</sup>/min</label>
-								</div>
-							</div>
-							<div class="">
+									<input class="form-control" name="price" id="price">
+									<div id="slider-range"></div>
 
-								<label for="customRange3">Example range</label>
-								<input type="range" class="custom-range" min="2" max="355" step="1" id="customRange3">
-								<div id="slider-range"></div>
-
-								<input class="form-control" name="price" id="price">
-								<div id="slider-range"></div>
-
+								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
+					<div class="text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-mobile-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile3">
+								<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-3"></i>
+								Pressure range
+							</button>
+						</p>
+					</div>
+					<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile3" data-parent="#accordionExampleMobile">
+						<form action="">
+							<div class="form-group m-3">
+								<div class="">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange1">
+										<label class="custom-control-label" for="PressureRange1">Low (up to 10 bar)</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange2">
+										<label class="custom-control-label" for="PressureRange2">Medium (up to 15 bar)</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="PressureRange3">
+										<label class="custom-control-label" for="PressureRange3">High (up to 40 bar)</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="text-success">
+						<p class="h-100 position-relative">
+							<button id="btn-mobile-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile4">
+								<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-4"></i>
+								Equipment
+							</button>
+						</p>
+					</div>
+					<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile4" data-parent="#accordionExampleMobile">
+						<form action="">
+							<div class="form-group m-3">
+								<div class="border-bottom pb-3">
+									<div class="title">Heat recovery</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentHeatRecovery">
+										<label class="custom-control-label" for="EquipmentHeatRecovery">Yes</label>
+									</div>
+								</div>
+								<div class="border-bottom pb-3 pt-1">
+									<div class="title">Sound absorption</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption1">
+										<label class="custom-control-label" for="EquipmentSoundAbsorption1">non silenced</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption2">
+										<label class="custom-control-label" for="EquipmentSoundAbsorption2">silenced</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+										<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
+										<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced (optionally)</label>
+									</div>
+								</div>
+								<div class="border-bottom pb-3 pt-1">
+									<div class="title">Delivery control</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl1">
+										<label class="custom-control-label" for="EquipmentDeliveryControl1">proportional regulation</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl2">
+										<label class="custom-control-label" for="EquipmentDeliveryControl2">water cooled</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl3">
+										<label class="custom-control-label" for="EquipmentDeliveryControl3">fixed speed</label>
+									</div>
+								</div>
+								<div class="border-bottom pb-3 pt-1">
+									<div class="title">Cooling</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentCooling1">
+										<label class="custom-control-label" for="EquipmentCooling1">air cooled</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentCooling2">
+										<label class="custom-control-label" for="EquipmentCooling2">water cooled</label>
+									</div>
+								</div>
+								<div class="pt-1">
+									<div class="title">Other properties</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties1">
+										<label class="custom-control-label" for="EquipmentOtherProperties1">belt driven</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties2">
+										<label class="custom-control-label" for="EquipmentOtherProperties2">Compressed air station</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties3">
+										<label class="custom-control-label" for="EquipmentOtherProperties3">oil lubricated</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties4">
+										<label class="custom-control-label" for="EquipmentOtherProperties4">oil lubricated</label>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties5">
+										<label class="custom-control-label" for="EquipmentOtherProperties5">oil lubricated</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-mobile-3" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile3">
-							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-3"></i>
-							Pressure range
-						</button>
-					</p>
-				</div>
-				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile3" data-parent="#accordionExampleMobile">
-					<form action="">
-						<div class="form-group m-3">
-							<div class="">
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="PressureRange1">
-									<label class="custom-control-label" for="PressureRange1">Low (up to 10 bar)</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="PressureRange2">
-									<label class="custom-control-label" for="PressureRange2">Medium (up to 15 bar)</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="PressureRange3">
-									<label class="custom-control-label" for="PressureRange3">High (up to 40 bar)</label>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="text-success">
-					<p class="h-100 position-relative">
-						<button id="btn-mobile-4" class="btn text-success btn-outline-success bg-white w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseExampleMobile4">
-							<i class="fas fa-caret-down mr-2" id="btn-fas-mobile-4"></i>
-							Equipment
-						</button>
-					</p>
-				</div>
-				<div class="mb-3 bg-white border border-success collapse" id="collapseExampleMobile4" data-parent="#accordionExampleMobile">
-					<form action="">
-						<div class="form-group m-3">
-							<div class="border-bottom pb-3">
-								<div class="title">Heat recovery</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentHeatRecovery">
-									<label class="custom-control-label" for="EquipmentHeatRecovery">Yes</label>
-								</div>
-							</div>
-							<div class="border-bottom pb-3 pt-1">
-								<div class="title">Sound absorption</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption1">
-									<label class="custom-control-label" for="EquipmentSoundAbsorption1">non silenced</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption2">
-									<label class="custom-control-label" for="EquipmentSoundAbsorption2">silenced</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
-									<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentSoundAbsorption3">
-									<label class="custom-control-label" for="EquipmentSoundAbsorption3">super silenced (optionally)</label>
-								</div>
-							</div>
-							<div class="border-bottom pb-3 pt-1">
-								<div class="title">Delivery control</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl1">
-									<label class="custom-control-label" for="EquipmentDeliveryControl1">proportional regulation</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl2">
-									<label class="custom-control-label" for="EquipmentDeliveryControl2">water cooled</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentDeliveryControl3">
-									<label class="custom-control-label" for="EquipmentDeliveryControl3">fixed speed</label>
-								</div>
-							</div>
-							<div class="border-bottom pb-3 pt-1">
-								<div class="title">Cooling</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentCooling1">
-									<label class="custom-control-label" for="EquipmentCooling1">air cooled</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentCooling2">
-									<label class="custom-control-label" for="EquipmentCooling2">water cooled</label>
-								</div>
-							</div>
-							<div class="pt-1">
-								<div class="title">Other properties</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties1">
-									<label class="custom-control-label" for="EquipmentOtherProperties1">belt driven</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties2">
-									<label class="custom-control-label" for="EquipmentOtherProperties2">Compressed air station</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties3">
-									<label class="custom-control-label" for="EquipmentOtherProperties3">oil lubricated</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties4">
-									<label class="custom-control-label" for="EquipmentOtherProperties4">oil lubricated</label>
-								</div>
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="EquipmentOtherProperties5">
-									<label class="custom-control-label" for="EquipmentOtherProperties5">oil lubricated</label>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</form>
+			</form>
 		</section>
 		
 
-
-		<?php
-
-		require_once('search/field-delivery.php');
-
-		?>
-
-		<section>
-			<form action="" onchange= "getdetails()" id="formsearch">
-				
-		<p>
-			<select name="category" id="category">
-				<option value="All" selected="">Выберите категорию</option>
-				<option value="Компрессоры">Компрессоры</option>
-				<option value="Воздухоподготовка">Воздухоподготовка</option>
-				<option value="Специальные газы">Специальные газы</option>
-				<option value="Системы управления">Системы управления</option>
-				<option value="Запчасти">Запчасти</option>
-			</select>
-		</p>
-
-
-
-
-			</form>
-			<div id="msg"></div>
+		<section class="container mt-5">
+			<div class="row" id="msg">
+			</div>
 		</section>
-
 
 
 
@@ -884,7 +856,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/up-scroll.js"></script>
-	<script type="text/javascript" src="js/images-show.js"></script>
+	<script type="text/javascript" src="js/images-show.js"></script><!--подключенный скрипт продукции-->
+	<script src="search/main-product.js"></script>
+
 
 </body>
 
