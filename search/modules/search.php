@@ -1,5 +1,5 @@
 <?php
-require_once('../config.php');
+require_once('../../config.php');
 
 define("DB_HOST", $hostname);
 define("DB_NAME", $dbName); //Имя базы

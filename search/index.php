@@ -14,13 +14,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<link href="/style.css" rel="stylesheet" type="text/css" />
-	<link href="search.css" rel="stylesheet" type="text/css" />
+	<link href="modules/search.css" rel="stylesheet" type="text/css" />
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="modules/range.css">
 
 
@@ -847,13 +846,12 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/up-scroll.js"></script>
 	<script type="text/javascript" src="../js/images-show.js"></script>
-	<script type="text/javascript" src="modules/jquery.ui.touch-punch.min.js"></script>
 
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="modules/radio-control.js"></script>
 	<!--подключенный скрипт продукции-->
 	<script src="main-product.js"></script>
-	<script src="search.js"></script>
+	<script src="modules/search.js"></script>
 
 
 </body>
