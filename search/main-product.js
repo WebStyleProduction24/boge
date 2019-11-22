@@ -7,27 +7,27 @@ $( "#slider-range-performance" ).on( "slidechange", function( event, ui ) { getd
 function getdetails(){
 
 	var category = $('#category').val(),
-			type_compressor = $('input[name="type_compressor[]"]:checked').val(),
-			
-			engine_capacity_st = $('input[name="engine_capacity_st"]').val(),
-			engine_capacity_en = $('input[name="engine_capacity_en"]').val(),
-			performance_st = $('input[name="performance_st"]').val(),
-			performance_en = $('input[name="performance_en"]').val(),
-			heat_recovery = $('input[name="heat_recovery"]:checked').val(),
-			
-			type_oil_checked = $('input[name="type_oil[]"]:checked'),
-			pressure_checked = $('input[name="pressure[]"]:checked'),
-			sound_isolation_checked = $('input[name="sound_isolation[]"]:checked'),
-			regulation_checked = $('input[name="regulation[]"]:checked'),
-			cooling_checked = $('input[name="cooling[]"]:checked'),
-			other_parameters_checked = $('input[name="other_parameters[]"]:checked'),
-			
-			type_oil = [],
-			pressure = [],
-			sound_isolation = [],
-			regulation = [],
-			cooling = [],
-			other_parameters = [];
+	type_compressor = $('input[name="type_compressor[]"]:checked').val(),
+
+	engine_capacity_st = $('input[name="engine_capacity_st"]').val(),
+	engine_capacity_en = $('input[name="engine_capacity_en"]').val(),
+	performance_st = $('input[name="performance_st"]').val(),
+	performance_en = $('input[name="performance_en"]').val(),
+	heat_recovery = $('input[name="heat_recovery"]:checked').val(),
+
+	type_oil_checked = $('input[name="type_oil[]"]:checked'),
+	pressure_checked = $('input[name="pressure[]"]:checked'),
+	sound_isolation_checked = $('input[name="sound_isolation[]"]:checked'),
+	regulation_checked = $('input[name="regulation[]"]:checked'),
+	cooling_checked = $('input[name="cooling[]"]:checked'),
+	other_parameters_checked = $('input[name="other_parameters[]"]:checked'),
+
+	type_oil = [],
+	pressure = [],
+	sound_isolation = [],
+	regulation = [],
+	cooling = [],
+	other_parameters = [];
 
 	for (var x=0; x<type_oil_checked.length;x++){ 
 		type_oil.push(type_oil_checked[x].value); 
@@ -64,7 +64,8 @@ function getdetails(){
 
 	$.ajax({
 		type: "POST",
-		url: "search/show.php",
+		url: "show.php",
+		dataType: 'json',
 		data: {
 			cat: category,
 			type_compressor: type_compressor,
@@ -79,9 +80,10 @@ function getdetails(){
 			regulation: regulation,
 			cooling: cooling,
 			other_parameters: other_parameters
+		}, 
+		success: function(data){
+			$('#msg').html(data.out);    /* выведет "Текст" */
+			$('#kol').html(data.kol);   /* выведет "Ошибка" */
 		}
-	}).done(function( data )
-	{
-		$("#msg").html( data );
 	});
 }

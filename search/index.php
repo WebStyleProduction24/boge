@@ -8,12 +8,13 @@
 
 	<!-- Via markup -->
 
-	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="/css/font.css">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="/style.css" rel="stylesheet" type="text/css" />
+	<link href="search.css" rel="stylesheet" type="text/css" />
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -30,7 +31,7 @@
 		<div class="container mt-3 mt-lg-0 position-inherit-mw-768">
 			<div class="row justify-content-between align-items-end">
 				<div class="col-5 col-sm-4 logo">
-					<a href="index.html" title="Компрессорное оборудование BOGE: Винтовые и поршневые воздушные компрессоры, осушители, фильтры сжатого воздуха BOGE. Генераторы азота и кислорода BOGE. Конденсатоотводчики BOGE. Запчасти и сервис BOGE." rel="home" class="d-block mt-1 mt-sm-0"></a>
+					<a href="/index.html" title="Компрессорное оборудование BOGE: Винтовые и поршневые воздушные компрессоры, осушители, фильтры сжатого воздуха BOGE. Генераторы азота и кислорода BOGE. Конденсатоотводчики BOGE. Запчасти и сервис BOGE." rel="home" class="d-block mt-1 mt-sm-0"></a>
 				</div>
 				<div class="col-7 col-sm-8 col-xl-8 position-inherit-mw-768">
 					<div class="row float-right">
@@ -39,22 +40,22 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav mr-auto align-items-center">
 										<li class="nav-item d-none d-lg-block dropdown">
-											<a class="nav-link" href="mission.html">Миссия</a>
+											<a class="nav-link" href="/mission.html">Миссия</a>
 										</li>
 										<li class="nav-item d-none d-lg-block">
-											<a class="nav-link" href="production.html">Производство</a>
+											<a class="nav-link" href="/production.html">Производство</a>
 										</li>
 										<li class="nav-item d-none d-lg-block">
-											<a class="nav-link" href="about.html">О нас</a>
+											<a class="nav-link" href="/about.html">О нас</a>
 										</li>
 										<li class="nav-item d-none d-lg-block">
-											<a class="nav-link" href="brochures.html">Брошюры</a>
+											<a class="nav-link" href="/brochures.html">Брошюры</a>
 										</li>
 										<li class="nav-item d-none d-lg-block">
-											<a class="nav-link" href="coordinate.html">Контакты</a>
+											<a class="nav-link" href="/coordinate.html">Контакты</a>
 										</li>
 										<li class="nav-item d-none d-lg-block">
-											<a class="nav-link" href="careers.html">Карьера</a>
+											<a class="nav-link" href="/careers.html">Карьера</a>
 										</li>
 									</ul>
 								</div>
@@ -67,10 +68,10 @@
 							</div>
 						</div>
 						<div class="col-4 d-lg-none d-xl-none px-0">
-							<a href="support.html">
-								<img alt="СЕРВИС BOGE" src="images/icn_my_boge.png" style="margin-top:1px; height:27px; width:30px">
+							<a href="/support.html">
+								<img alt="СЕРВИС BOGE" src="/images/icn_my_boge.png" style="margin-top:1px; height:27px; width:30px">
 							</a>
-							<p class="my-bodge mb-0"><strong><a href="support.html">СЕРВИС</a></strong></p>
+							<p class="my-bodge mb-0"><strong><a href="/support.html">СЕРВИС</a></strong></p>
 						</div>
 						<div class="navbar-2 col-xl-12 col-lg-12 col-4 position-inherit-mw-768">
 							<nav class="navbar navbar-expand-lg navbar-light float-right p-0 position-inherit-mw-768">
@@ -90,13 +91,13 @@
 											<div class="dropdown-menu bg-light" aria-labelledby="dropdownMenu1">
 												<ul class="list-unstyled p-0">
 													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/products">Search Products</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="screw.html">Винтовые компрессоры</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="controls.html">Системы управления</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="piston.html">Поршневые компрессоры</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="scroll.html">Спиральные компрессоры</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="storage.html">Компрессоры с хранения</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/screw.html">Винтовые компрессоры</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/controls.html">Системы управления</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/piston.html">Поршневые компрессоры</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/scroll.html">Спиральные компрессоры</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/storage.html">Компрессоры с хранения</a></li>
 													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/en/heat-recovery">Градирни охлаждения</a></li>
-													<div class="border-top pl-3 bg-white"><a class="text-dark pl-4" href="compressors.html" class="underlink">ВСЕ ОБОРУДОВАНИЕ</a></div>
+													<div class="border-top pl-3 bg-white"><a class="text-dark pl-4" href="/compressors.html" class="underlink">ВСЕ ОБОРУДОВАНИЕ</a></div>
 												</ul>
 											</div>
 										</li>
@@ -104,21 +105,21 @@
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Подготовка</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="adsorption.html">Адсорбционные осушители</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="refrigerant.html">Рефрижераторные осушители</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="refrigerant.html">Осушители до 50 атм</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="membrane.html">Мембранные осушители</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="filters16.html">Магистральные фильтры до 16 атм</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="filters25.html">Магистральные фильтры до 25 атм</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="filters50.html">Магистральные фильтры до 50 атм</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="filters16.html">Стерильные фильтры до 16 атм</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="bekomat.html">Конденсатоотводчики</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="nitrogen_generator.html">Генераторы азота</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="oxygen_generator.html">Генераторы кислорода</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="cseparators.html">Циклонные сепараторы</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="owamat.html">Сепараторы конденсата</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="converters.html">Блоки химфильтрации</a></li>
-													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="airpod.html" class="underlink">ВСЕ ОБОРУДОВАНИЕ</a></div>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/adsorption.html">Адсорбционные осушители</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/refrigerant.html">Рефрижераторные осушители</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/refrigerant.html">Осушители до 50 атм</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/membrane.html">Мембранные осушители</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/filters16.html">Магистральные фильтры до 16 атм</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/filters25.html">Магистральные фильтры до 25 атм</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/filters50.html">Магистральные фильтры до 50 атм</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/filters16.html">Стерильные фильтры до 16 атм</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/bekomat.html">Конденсатоотводчики</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/nitrogen_generator.html">Генераторы азота</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/oxygen_generator.html">Генераторы кислорода</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/cseparators.html">Циклонные сепараторы</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/owamat.html">Сепараторы конденсата</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/converters.html">Блоки химфильтрации</a></li>
+													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/airpod.html" class="underlink">ВСЕ ОБОРУДОВАНИЕ</a></div>
 												</ul>
 											</div>
 										</li>
@@ -126,15 +127,15 @@
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Решения</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="efficiency.html">Эффективность</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="technology.html">Технология</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="case-studies.html">Кейсы, решения</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="industries.html">Отраслевые применения</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="medical-compressed-air-systems.html">Медицинское применение</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="special-gases.html">Генераторы азота/кислорода</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="oilfree.html">Безмасляный воздух</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="analytics.html">Аналитика BOGE</a></li>
-													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="compressors.html" class="underlink">ВСЕ</a></div>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/efficiency.html">Эффективность</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/technology.html">Технология</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/case-studies.html">Кейсы, решения</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/industries.html">Отраслевые применения</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/medical-compressed-air-systems.html">Медицинское применение</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/special-gases.html">Генераторы азота/кислорода</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/oilfree.html">Безмасляный воздух</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/analytics.html">Аналитика BOGE</a></li>
+													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/compressors.html" class="underlink">ВСЕ</a></div>
 												</ul>
 											</div>
 										</li>
@@ -142,14 +143,14 @@
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сервис</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">										
 												<ul class="list-unstyled p-0">
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="helpline.html">Техподдержка 10/5</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="spares.html">Оригинальные запчасти /сервиспакеты</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="planning-and-diagnostic.html">Дистанционное отслеживание ТО</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="maintenance-and-warranty.html">Обслуживание и гарантии</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="customer-service.html">Сервисное обслуживание</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="remote-monitoring.html">Дистанционный мониторинг</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="row/compendium/compressed_air_compendium.pdf">Сборник статей</a></li>
-													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="services.html" class="underlink">ВСЕ</a></div>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/helpline.html">Техподдержка 10/5</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/spares.html">Оригинальные запчасти /сервиспакеты</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/planning-and-diagnostic.html">Дистанционное отслеживание ТО</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/maintenance-and-warranty.html">Обслуживание и гарантии</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/customer-service.html">Сервисное обслуживание</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/remote-monitoring.html">Дистанционный мониторинг</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/row/compendium/compressed_air_compendium.pdf">Сборник статей</a></li>
+													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/services.html" class="underlink">ВСЕ</a></div>
 												</ul>
 											</div>
 										</li>
@@ -157,11 +158,11 @@
 											<a class="btn dropdown-toggle text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Компания</a>
 											<div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
 												<ul class="list-unstyled p-0">
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="about.html">О нас</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="coordinate.html">Наши офисы</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="history.html">История</a></li>
-													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="quality-certifications.html">Качество и сертификация</a></li>
-													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="company.html" class="underlink">ВСЕ</a></div>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/about.html">О нас</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/coordinate.html">Наши офисы</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/history.html">История</a></li>
+													<li class="ml-4 ml-lg-0 border-right float-left col-4 pl-3"><a class="text-dark" href="/quality-certifications.html">Качество и сертификация</a></li>
+													<div class="ulink-block border-top pl-3 bg-white"><a class="text-dark pl-4" href="/company.html" class="underlink">ВСЕ</a></div>
 												</ul>
 											</div>
 										</li>
@@ -201,9 +202,9 @@
 			<h1 class="font-weight-bold mb-3 text-primary">Which product are you looking for?</h1>
 
 			
-				<div class="row m-0 align-items-center bg-success text-white">
-					<div  class="col-12 col-sm p-3 border-right border-white">
-						<form action="" onchange= "getdetails()" id="cat">
+			<div class="row m-0 align-items-center bg-success text-white">
+				<div  class="col-12 col-sm p-3 border-right border-white">
+					<form action="" onchange= "getdetails()" id="cat">
 						<!--		добавление id в select			-->
 						<select name="category" id="category" class="form-control-sm text-success border-success col">
 							<option value="All" selected="">Выберите категорию</option>
@@ -215,16 +216,16 @@
 						</select>
 					</form>
 
-					</div>
-					<div class="col-12 col-sm py-0 px-3 p-sm-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;">48</span> <span class="align-text-bottom">Results</span></div>
-					<div class="col-12 col-sm py-0 px-3 p-sm-3">
-						<form class="form-inline my-2 my-lg-0">									
-							<input class="who form-control mr-sm-2" type="search" name="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">						
-							<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
-							<ul class="search_result"></ul>
-						</form>
-					</div>
 				</div>
+				<div class="col-12 col-sm py-0 px-3 p-sm-3 border-right border-white ff-helvetica text-uppercase font-weight-normal"><span style="font-size: 2rem;" id="kol"></span> <span class="align-text-bottom">Results</span></div>
+				<div class="col-12 col-sm py-0 px-3 p-sm-3">
+					<form class="form-inline my-2 my-lg-0 search">									
+						<input class="form-control mr-sm-2 who" type="search" placeholder="Поиск..." aria-label="Поиск..." autocomplete="off">						
+						<button type="submit" class="border-success border-top-0 border-bottom-0 border-right-0 rounded-0 btn position-absolute mr-3 text-success"><i class="fas fa-search"></i></button>
+						<ul class="search_result"></ul>
+					</form>
+				</div>
+			</div>
 			<form action="" onchange= "getdetails()" id="formsearch">
 				<div class="row m-0 pt-3 bg-light d-none d-sm-flex" id="accordionExample">
 					<div class="col-3 text-success">
@@ -296,6 +297,8 @@
 								</div>
 							</div>
 						</div>
+
+
 						<div class="bg-white border border-success col-12 collapse" id="collapseExample2" data-parent="#accordionExample">
 
 
@@ -311,10 +314,13 @@
 									</div>
 								</div>
 								<div class="row">
-									<?php  require_once('search/modules/range-control.php'); ?>
+									<?php require_once('modules/range-control.php'); ?>
 								</div>
 							</div>
 						</div>
+
+
+						
 						<div class="bg-white border border-success col-12 collapse" id="collapseExample3" data-parent="#accordionExample">
 							<form action="">
 								<div class="form-group m-3">
@@ -654,14 +660,14 @@
 					<div class="bg-gradient px-3 py-4 h-100 position-relative">
 						<h3>Технологическая новизна серии компрессоров S-4</h3>
 						<p class="pb-5">С новой винтовой ступенью и внутренней компоновкой эти модели представляют собой новое поколение легких в обслуживании, малошумных компрессоров высокой эффективности.</p>
-						<div class="col-md-7 col-lg-5 py-4 align-self-end position-absolute fixed-bottom"><a class="btn text-success btn-outline-success bg-white mt-lg-1 w-100" href="boge_s4.html" role="button">Подробнее</a></div>
+						<div class="col-md-7 col-lg-5 py-4 align-self-end position-absolute fixed-bottom"><a class="btn text-success btn-outline-success bg-white mt-lg-1 w-100" href="/boge_s4.html" role="button">Подробнее</a></div>
 					</div>
 				</div>
 				<div class="col-md-6 mb-4">
 					<div class="bg-gradient px-3 py-4 h-100 position-relative">
 						<h3>Устройства слива конденсата BOGE Bekomat – интеллектуальный слив конденсата без потерь сжатого воздуха</h3>
 						<p class="pb-5">Сброс конденсата в конденсатоотводчике происходит только при достижении установленного уровня заполнения (при заполнении внутренней емкости конденсатоотводчика), что обеспечивает отвод конденсата, адаптированный к реальной скорости его образования, без потерь сжатого воздуха в Вашей пневмосистеме. На сегодняшний день таких устройств продано более 2 миллионов штук, Вы можете нам доверять!</p>
-						<div class="col-md-7 col-lg-5 py-4 align-self-end position-absolute fixed-bottom"><a class="btn text-success btn-outline-success bg-white mt-lg-1 w-100" href="bekomat.html" role="button">Подробнее</a></div>
+						<div class="col-md-7 col-lg-5 py-4 align-self-end position-absolute fixed-bottom"><a class="btn text-success btn-outline-success bg-white mt-lg-1 w-100" href="/bekomat.html" role="button">Подробнее</a></div>
 					</div>
 				</div>
 			</div>
@@ -670,73 +676,73 @@
 		<section class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="screw.html">
+					<a class="w-100" href="/screw.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Винтовые компрессоры
 						</h6>
 					</a>
-					<a href="screw.html">
-						<img class="w-100" src="images/public/products/boge-schraubenkompressoren-small.jpg" alt="Винтовые компрессоры BOGE">
+					<a href="/screw.html">
+						<img class="w-100" src="/images/public/products/boge-schraubenkompressoren-small.jpg" alt="Винтовые компрессоры BOGE">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="controls.html">
+					<a class="w-100" href="/controls.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Системы управления
 						</h6>
 					</a>
-					<a href="controls.html">
-						<img class="w-100" src="images/public/products/steuerungen_0.jpg" alt="Системы управления BOGE">
+					<a href="/controls.html">
+						<img class="w-100" src="/images/public/products/steuerungen_0.jpg" alt="Системы управления BOGE">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="piston.html">
+					<a class="w-100" href="/piston.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Поршневые компрессоры
 						</h6>
 					</a>
-					<a href="piston.html">
-						<img class="w-100" src="images/public/products/boge-kolbenkompressoren-small.jpg" alt="Поршневые компрессоры BOGE">
+					<a href="/piston.html">
+						<img class="w-100" src="/images/public/products/boge-kolbenkompressoren-small.jpg" alt="Поршневые компрессоры BOGE">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="scroll.html">
+					<a class="w-100" href="/scroll.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Спиральные компрессоры
 						</h6>
 					</a>
-					<a href="scroll.html">
-						<img class="w-100" src="images/public/products/boge-scrollkompressoren-small.jpg" alt="Спиральные компрессоры BOGE">
+					<a href="/scroll.html">
+						<img class="w-100" src="/images/public/products/boge-scrollkompressoren-small.jpg" alt="Спиральные компрессоры BOGE">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="airpod.html">
+					<a class="w-100" href="/airpod.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Воздухоподготовка
 						</h6>
 					</a>
 					<a href="/airpod.html">
-						<img class="w-100" src="images/public/products/druckluftaufbereitung.jpg" alt="Воздухоподготовка BOGE">
+						<img class="w-100" src="/images/public/products/druckluftaufbereitung.jpg" alt="Воздухоподготовка BOGE">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="storage.html">
+					<a class="w-100" href="/storage.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Компрессоры с хранения
 						</h6>
 					</a>
-					<a href="storage.html">
-						<img class="w-100" src="images/public/products/gebrauchtmaschinen_0.jpg" alt="Компрессоры BOGE с хранения">
+					<a href="/storage.html">
+						<img class="w-100" src="/images/public/products/gebrauchtmaschinen_0.jpg" alt="Компрессоры BOGE с хранения">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4">
-					<a class="w-100" href="heat-recovery.html">
+					<a class="w-100" href="/heat-recovery.html">
 						<h6 class="bg-light py-4 pl-3 mb-0 font-weight-bold text-body text-uppercase">
 							Градирни
 						</h6>
 					</a>
 					<a href="/en/heat-recovery">
-						<img class="w-100" src="images/public/products/waermerueckgewinnung_0.jpg" alt="Градирни BOGE">
+						<img class="w-100" src="/images/public/products/waermerueckgewinnung_0.jpg" alt="Градирни BOGE">
 					</a>
 				</div>
 			</div>
@@ -752,32 +758,32 @@
 			<div class="container">
 				<div class="row justify-content-between d-lg-none pt-4 font-weight-bold">
 					<div class="col-5">
-						<a href="#" class="nav-link text-white"><i class="fas fa-angle-left"></i> Back</a>
+						<a href="/#" class="nav-link text-white"><i class="fas fa-angle-left"></i> Back</a>
 					</div>
 					<div class="col-5 text-right"> 
-						<a href="#start" class="nav-link text-white">Top <i class="fas fa-angle-up"></i></a>
+						<a href="/#start" class="nav-link text-white">Top <i class="fas fa-angle-up"></i></a>
 					</div>
 				</div>
 				<nav class="navbar navbar-expand-lg pl-0 pt-0 pt-lg-4">
 					<div class="navbar-collapse text-white" id="navbarNav">
 						<ul class="list-group list-group-flush navbar-nav">
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white pl-0" href="compressors.html">Оборудование</a>
+								<a class="nav-link text-white pl-0" href="/compressors.html">Оборудование</a>
 							</li>
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white" href="case-studies.html">Решения</a>
+								<a class="nav-link text-white" href="/case-studies.html">Решения</a>
 							</li>
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white" href="services.html">Сервисы</a>
+								<a class="nav-link text-white" href="/services.html">Сервисы</a>
 							</li>
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white" href="about.html">О Компании</a>
+								<a class="nav-link text-white" href="/about.html">О Компании</a>
 							</li>
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white" href="careers.html">Карьера</a>
+								<a class="nav-link text-white" href="/careers.html">Карьера</a>
 							</li>
 							<li class="nav-item list-group-item">
-								<a class="nav-link text-white" href="coordinate.html">Контакты</a>
+								<a class="nav-link text-white" href="/coordinate.html">Контакты</a>
 							</li>
 						</ul>
 					</div>
@@ -837,9 +843,9 @@
 	<!-- Лейбл с контактными данными -->
 	<div class="contacts z-index-tooltip col-12 col-sm-2 col-lg-3 col-xl-2 pr-0 pl-0">
 		<div class="bg-light p-2 text-center pt-sm-0 pt-lg-2">
-			<a href="mailto:info@boge.ru" class="title font-weight-bold"><i class="far fa-envelope"></i> info@boge.ru</a>
+			<a href="/mailto:info@boge.ru" class="title font-weight-bold"><i class="far fa-envelope"></i> info@boge.ru</a>
 			<div class="link-section">
-				<a href="tel:+78005008945" class="text-success"><i class="fas fa-phone text-success"></i> 8 (800) 500-89-45
+				<a href="/tel:+78005008945" class="text-success"><i class="fas fa-phone text-success"></i> 8 (800) 500-89-45
 				</a>
 			</div>
 		</div>
@@ -854,10 +860,12 @@
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/up-scroll.js"></script>
-	<script type="text/javascript" src="js/images-show.js"></script><!--подключенный скрипт продукции-->
-	<script src="search/main-product.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/up-scroll.js"></script>
+	<script type="text/javascript" src="../js/images-show.js"></script>
+	<!--подключенный скрипт продукции-->
+	<script src="main-product.js"></script>
+	<script src="search.js"></script>
 
 
 </body>

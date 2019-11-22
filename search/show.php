@@ -85,24 +85,37 @@ if ($where) $sql .= " WHERE $where";
 $res = mysqli_query($link, $sql);
 
 $i=0;
+$out = '';
 
 while ($row = mysqli_fetch_assoc($res)) {
 	$i++;
-	?>
+	$src = "http://boge." . $domain . "/images/public/search-product/" . $row['image'];
+	$url = "http://boge." . $domain . "/" . $row['url'] . ".html";
+	$img = '<img src="' . $src . '"  alt="' . $row['name'] . '"  class="border bg-light w-100">';
+	$a_img = '<a href="' . $url . '">' . $img . '</a>';
+	$h6 = '<h6 class="pt-3 font-weight-bold text-body">' . $row['name'] . '</h6>';
+	$a_h6 = '<a href="' . $url . '">' . $h6 . '</a>';
 
-	<div class="col-12 col-sm-4 col-lg-3 mb-4">
-		<a href="<?php url_DB(); ?>"><img src="<?php src_img_DB(); ?>" alt="<?php echo $row['name']; ?>" class="border bg-light w-100"></a>
-		<a href="<?php url_DB(); ?>"><h6 class="pt-3 font-weight-bold text-body"><?php echo $row['name']; ?></h6></a>
-	</div>
-	<?php 
-
+	$out .= '<div class="col-12 col-sm-4 col-lg-3 mb-4">'. $a_img . $a_h6 . '</div>';
 }
 
-if ( $i==0 ) { ?>
+// $kol = $i;
+// $out = json_encode(array('kol' =>$kol));
 
-<div class="col-12"><strong>По Вашим параметрам ничего не найдено!</strong></div>
 
-<?php
-}
+if ( $i==0 ) $out = "<div class='col-12'><strong>По Вашим параметрам ничего не найдено!</strong></div>";
+
+// echo $out;
+
+ // echo json_decode(array('out' => 'test', 'kol' => $i ));
+
+
+
+$result = array(
+	'out'  => $out,
+	'kol' => $i
+);
+ 
+echo json_encode($result);
 
 ?>
