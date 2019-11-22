@@ -5,6 +5,6 @@
 	$password = "";
 	$dbName = "boge";
 
-	$domain = "ru";
+	$domain = "localhost";
 
 ?>
