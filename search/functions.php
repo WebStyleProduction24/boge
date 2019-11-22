@@ -1,6 +1,6 @@
 <?php 
 
-$domain = 'ru';
+$domain = 'localhost';
 
 	//Src изображения продукта
 function src_img_DB() {

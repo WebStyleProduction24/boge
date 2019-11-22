@@ -18,7 +18,7 @@ if(!empty($_POST["search"])){ //Принимаем данные
     or die('Ошибка №'.__LINE__.'<br>Обратитесь к администратору сайта пожалуйста, сообщив номер ошибки.');
 
     while ($row = $db_search -> fetch_array()) {
-        echo "\n<li><a href='/".$row["url"].".html'>".$row["name"]."</a></li>"; //$row["name"] - имя таблицы
+        echo "\n<li><a href='".$row["url"].".html'>".$row["name"]."</a></li>"; //$row["name"] - имя таблицы
     }
 
 }
