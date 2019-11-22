@@ -1,12 +1,6 @@
 <?php
 
-require_once('functions.php');
-
-$hostname = "localhost"; // название/путь сервера, с MySQL
-$username = "root"; // имя пользователя (в Denwer`е по умолчанию "root")
-$password = ""; // пароль пользователя (в Denwer`е по умолчанию пароль отсутствует, этот параметр можно оставить пустым)
-$dbName = "boge"; // название базы данных
-
+require_once('../config.php');
 
 /* Создаем соединение */
 $link = mysqli_connect( $hostname, $username, $password, $dbName ) or die ("Не могу создать соединение");
@@ -89,8 +83,8 @@ $out = '';
 
 while ($row = mysqli_fetch_assoc($res)) {
 	$i++;
-	$src = "http://boge." . $domain . "/images/public/search-product/" . $row['image'];
-	$url = "http://boge." . $domain . "/" . $row['url'] . ".html";
+	$src = "/images/public/search-product/" . $row['image'];
+	$url = "/" . $row['url'] . ".html";
 	$img = '<img src="' . $src . '"  alt="' . $row['name'] . '"  class="border bg-light w-100">';
 	$a_img = '<a href="' . $url . '">' . $img . '</a>';
 	$h6 = '<h6 class="pt-3 font-weight-bold text-body">' . $row['name'] . '</h6>';

@@ -8,11 +8,11 @@
 			values: [ 0.65, 355 ],
 			slide: function( event, ui ) {
         // $( "#amount" ).val( ui.values[ 0.00 ] + " - " + ui.values[ 1.00 ] );
-        $( "#amount-power-st" ).val( ui.values[ 0 ].toFixed(2) );
+        $( "#amount-power-st-mob" ).val( ui.values[ 0 ].toFixed(2) );
         $( "#amount-power-en" ).val( ui.values[ 1 ].toFixed(2) );
       }
     });
-		$( "#amount-power-st" ).val( $( "#slider-range-power" ).slider( "values", 0 ).toFixed(2) );
+		$( "#amount-power-st-mob" ).val( $( "#slider-range-power" ).slider( "values", 0 ).toFixed(2) );
 		$( "#amount-power-en" ).val( $( "#slider-range-power" ).slider( "values", 1 ).toFixed(2) );
 
 		$( "#slider-range-performance" ).slider({
@@ -31,13 +31,13 @@
 		$( "#amount-performance-en" ).val( $( "#slider-range-performance" ).slider( "values", 1 ).toFixed(2) );
 	} );
 </script>
-
+test
 <div id="control" class="col-12">
 	<div id="option1" style="display: block">
 		<p>
 			<label for="amount">Выберите мощность по шкале:</label>
 			<span class="text-success">
-				<input class="text-success" name="engine_capacity_st" value="" type="text" id="amount-power-st" readonly /> кВт - <input class="text-success" name="engine_capacity_en" value="" type="text" id="amount-power-en" readonly /> кВт
+				<input class="text-success" name="engine_capacity_st" value="" type="text" id="amount-power-st-mob" readonly /> кВт - <input class="text-success" name="engine_capacity_en" value="" type="text" id="amount-power-en" readonly /> кВт
 			</span>
 		</p>
 
