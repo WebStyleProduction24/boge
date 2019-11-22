@@ -4,7 +4,7 @@ require_once('header.php');
 require_once('../config.php');
 require_once('functions.php');
 
-$link = mysqli_connect($host, $user, $pass, $db_name);
+$link = mysqli_connect($hostname, $username, $password, $dbName);
 mysqli_query($link, "SET NAMES utf8"); //Задаем кодировку
 
 		// Ругаемся, если соединение установить не удалось
