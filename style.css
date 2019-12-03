@@ -1,4 +1,13 @@
 /*Стили Web Style Production 24 (https://wsp24.ru) */
+
+/*Конец Аккордион*/
+[id^="collapseExample"] {
+	padding: 0 15px;
+	margin: 0 15px;
+
+}
+/*Аккордион*/
+
 * {
 	font-family: Helvetica,Arial;
 }
@@ -849,8 +858,10 @@ form.form-inline button {
 
 @media (max-width: 991px) {
 	#accordionExample > div {
-		padding-right: 5px;
-		padding-left: 5px;
+		padding: 0 5px;
+	}
+	[id^="collapseExample"] {
+		margin: 0 5px;
 	}
 	#accordionExample > div button {
 		font-size: .85rem;
@@ -1006,6 +1017,20 @@ form.form-inline button {
 	.logo {
 		height: 45px;
 	}
+
+	#accordionExample > div:nth-child(1), #collapseExample1 {
+		order: 1;
+	}
+	#accordionExample > div:nth-child(2), #collapseExample2 {
+		order: 2;
+	}
+	#accordionExample > div:nth-child(3), #collapseExample3 {
+		order: 3;
+	}
+	#accordionExample > div:nth-child(4), #collapseExample4 {
+		order: 4;
+	}
+
 }
 
 
